@@ -5,7 +5,7 @@ import * as MUIIcon from "@mui/icons-material";
 
 const ViewCollegeOfCriminology: React.FC = () => {
     return (<>
-    <MUI.Typography variant={`h2`}>
+    <MUI.Typography variant={`innovativeTroublemakerH2`}>
         College Of Criminology.
     </MUI.Typography>    
     </>);

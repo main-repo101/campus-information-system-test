@@ -13,23 +13,9 @@ export default function CollegeOfNursing(): React.ReactElement {
         = React.useContext(CONTEXT_0x0003);
 
     return (<>
-            <MUI.Box
-                // sx={{
-                //     textAlign: 'center',
-                //     color: 'white',
-                //     height: '400px', // Adjust height as needed
-                //     display: 'flex',
-                //     alignItems: `end`,
-                //     justifyContent: 'flex-start',
-                //     backgroundImage: `url(${BG_HERO_001})`, // URL to the image or local path
-                //     backgroundSize: 'cover',
-                //     backgroundPosition: 'center',
-                // }}
-            >
-                <MUI.Typography variant="h2"
-                className={`text-lime-500`}>
-                    College of Nursing
-                </MUI.Typography>
-            </MUI.Box>
+        <MUI.Typography variant="innovativeTroublemakerH2"
+            className={`text-lime-500`}>
+            College of Nursing
+        </MUI.Typography>
     </>);
 }

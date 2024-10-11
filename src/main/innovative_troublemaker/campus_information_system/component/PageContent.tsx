@@ -1,6 +1,7 @@
 import * as React from "react";
+import * as ReactRouterDOM from "react-router-dom";
 import * as MUI from "@mui/material";
-import {ROUTES_GATE} from "@innovative_troublemaker/campus_information_system/component/layout/context/route.tsx";
+import { ROUTES_GATE } from "@innovative_troublemaker/campus_information_system/component/layout/context/route.tsx";
 
 export default class PageContent extends React.Component<{ pathname: string }> {
     render() {
@@ -21,7 +22,9 @@ export default class PageContent extends React.Component<{ pathname: string }> {
                 <MUI.Typography sx={{ width: `100%`, textAlign: `start`, justifyContent: `center`, fontWeight: `bold` }}>
                     / {pathname.split('/').filter(Boolean).join(` > `)}
                 </MUI.Typography>
+                {/* <ReactRouterDOM.BrowserRouter> */}
                 <ContentComponent />
+                {/* </ReactRouterDOM.BrowserRouter> */}
             </MUI.Box>
         );
     }

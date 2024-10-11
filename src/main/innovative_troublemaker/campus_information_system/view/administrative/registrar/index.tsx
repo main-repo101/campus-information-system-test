@@ -5,7 +5,7 @@ import * as MUI from "@mui/material";
 
 const ViewRegistrar: React.FC = () => {
     return (<>
-        <MUI.Typography variant={`h2`}>
+        <MUI.Typography variant={`innovativeTroublemakerH2`}>
             Registrar!.
         </MUI.Typography>
     </>)

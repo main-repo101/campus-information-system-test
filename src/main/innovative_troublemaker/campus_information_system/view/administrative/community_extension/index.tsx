@@ -6,7 +6,7 @@ import bgImg from "@innovative_troublemaker/campus_information_system/resource/i
 
 const ViewCommunityExtension: React.FC = () => {
     return (<>
-        <MUI.Typography variant={`innovativeTroublemakerH1`}>
+        <MUI.Typography variant={`innovativeTroublemakerH2`}>
             Community Extension
         </MUI.Typography>
     </>)

@@ -6,8 +6,10 @@ import * as MUI from "@mui/material";
 import * as MUIColor from "@mui/material/colors";
 import ComponentEvent from "./component/event";
 
-
-const ViewHome: React.FC = () => {
+interface OhMyProps {
+    toggleIt?: boolean;
+}
+const ViewHome: React.FC<OhMyProps> = ( ohMyProps: OhMyProps) => {
     return (<>
         <MUI.Stack spacing={4} sx={{ mt: 4 }} className="relative w-[100%]">
             {/* Overview Section */}
@@ -65,13 +67,13 @@ const ViewHome: React.FC = () => {
                     {/* Add more department cards as needed */}
                 </div>
             </div>
-            <MUI.Stack sx={{ }}>
+            <MUI.Stack sx={{}}>
                 <MUI.Typography variant="body1" className={`text-start p-2`}>
                     Hi there
                 </MUI.Typography>
             </MUI.Stack>
-            
-            <ComponentEvent/>
+
+            <ComponentEvent />
 
         </MUI.Stack>
     </>);
