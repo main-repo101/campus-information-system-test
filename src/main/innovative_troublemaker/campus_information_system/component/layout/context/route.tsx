@@ -36,6 +36,7 @@ import ViewOfficeOfVicePresident from "@innovative_troublemaker/campus_informati
 
 import ViewCommunityExtension from "@innovative_troublemaker/campus_information_system/view/administrative/community_extension/index.tsx";
 
+import ViewEClearance from "@innovative_troublemaker/campus_information_system/view/administrative/e_clearance/index.tsx";
 
 export const ROUTES: { readonly [key: string]: $model.IRouteData } = Object.freeze({
     HOME: Object.freeze({
@@ -222,6 +223,16 @@ export const ROUTES: { readonly [key: string]: $model.IRouteData } = Object.free
         navigation: {
             segment: "administrative/community-extension",
             title: "Communit Extension",
+            icon: <MUIIcon.BusinessCenterSharp />
+        }
+    }),
+    E_CLEARANCE: Object.freeze({
+        ID: "E_CLEARANCE",
+        path: "/administrative/e-clearance",
+        component: ViewEClearance,
+        navigation: {
+            segment: "administrative/e-clearance",
+            title: "E Clearance",
             icon: <MUIIcon.BusinessCenterSharp />
         }
     })

@@ -43,6 +43,7 @@ const NAVIGATION: Toolpad.Navigation = [
     ROUTES.OFFICE_OF_VICE_PRESIDENT.navigation,
     ROUTES.SPORT.navigation,
     ROUTES.COMMUNITY_EXTENSION.navigation,
+    ROUTES.E_CLEARANCE.navigation,
     { segment: 'integrations', title: 'Integrations', icon: <MUIIcon.Layers /> },
 ];
 
