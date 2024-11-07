@@ -25,6 +25,7 @@ output
 *.sln
 *.sw?
 
-
+.env.test
 .env.local
 local.properties
+!.keep

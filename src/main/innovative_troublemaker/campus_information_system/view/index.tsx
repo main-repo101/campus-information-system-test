@@ -26,10 +26,10 @@ export function view_welcome(
             {/* Hero Section */}
             <MUI.Paper
                 elevation={3}
-                className="flex flex-col items-center justify-center p-10 bg-cover bg-center text-white mb-8 transition-transform duration-500 hover:scale-105"
+                className="flex flex-col items-center justify-center p-10 bg-cover bg-center mb-8 transition-transform duration-500 hover:scale-105"
                 style={{ backgroundImage: "url('/path/to/hero-banner.jpg')" }}
             >
-                <h1 className="text-4xl md:text-6xl font-bold">Welcome to Harvard Campus</h1>
+                <h1 className="text-4xl md:text-6xl font-bold">Welcome to  Campus Information System</h1>
                 <p className="mt-4 text-lg md:text-xl text-center max-w-xl">
                     Discover our rich history, diverse community, and vibrant academic life.
                 </p>
