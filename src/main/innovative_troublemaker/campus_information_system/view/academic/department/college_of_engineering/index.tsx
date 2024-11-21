@@ -7,13 +7,15 @@ import { ROUTES } from "@innovative_troublemaker/campus_information_system/compo
 import Layout0x0001 from "./layout/layout0x0001.tsx";
 import ViewHome from "./view-home.tsx";
 import { IsoTwoTone } from "@mui/icons-material";
+import ComputerEngineeringCampusInfoSystem from "./view/EngineeringCampusInfoSystem.tsx";
 
 const ViewCollegeOfEngineering: React.FC = () => {
 
     // const [isToggle, setToggle] = React.useState<boolean>(true);
 
     return (<>
-        <ReactRouterDOM.BrowserRouter>
+        <ComputerEngineeringCampusInfoSystem/>
+        {/* <ReactRouterDOM.BrowserRouter>
             <MUI.Typography className={`w-full`} 
             variant={`innovativeTroublemakerWarning`}
             sx={(theme) => ({})}>
@@ -31,7 +33,7 @@ const ViewCollegeOfEngineering: React.FC = () => {
                     <ReactRouterDOM.Route path={`*`} element={<><MUI.Typography>Page not found!</MUI.Typography></>} />
                 </ReactRouterDOM.Route>
             </ReactRouterDOM.Routes>
-        </ReactRouterDOM.BrowserRouter>
+        </ReactRouterDOM.BrowserRouter> */}
     </>);
 };
 

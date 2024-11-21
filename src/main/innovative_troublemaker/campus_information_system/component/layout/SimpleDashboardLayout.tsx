@@ -103,7 +103,9 @@ export default class SimpleDashboardLayout extends React.Component {
 
         return (<>
 
-            <Toolpad.AppProvider
+            <Toolpad.AppProvider drawer={{
+                    collapsed: false
+                }}
                 navigation={NAVIGATION}
                 branding={{
                     logo: `[LOGO]`,
@@ -112,12 +114,27 @@ export default class SimpleDashboardLayout extends React.Component {
                 router={router}
                 theme={TOOLPAD_THEME}
             >
-                <Toolpad.DashboardLayout>
-                    <MUI.Box sx={{ px: 2, }}>
+                <Toolpad.DashboardLayout drawer={{
+                    collapsed: false
+                }}>
+                    {/* <MUI.Drawer
+                        variant="persistent" // Set to persistent for collapsing behavior
+                        open={false}
+                        sx={{
+                            width: 240,
+                            '& .MuiDrawer-paper': {
+                                width: 240,
+                                boxSizing: 'border-box',
+                            },
+                        }}
+                    >
+                    </MUI.Drawer> */}
+
+                    <MUI.Box sx={{ px: 2, }} className={`w-[100%]`}>
                         {/* <ReactRouterDOM.BrowserRouter> */}
                         {/* <ReactRouterDOM.Routes> */}
                         <PageContent pathname={pathname} />
-                        <FooterI />
+                        {/* <FooterI /> */}
                         {/* </ReactRouterDOM.Routes> */}
                         {/* </ReactRouterDOM.BrowserRouter> */}
                     </MUI.Box>

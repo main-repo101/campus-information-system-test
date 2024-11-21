@@ -12,7 +12,7 @@ if (container) {
     const root = ReactDOM.createRoot(container);
     root.render(
         <React.StrictMode>
-            <MUI.StyledEngineProvider injectFirst>
+            <MUI.StyledEngineProvider>
                 <SimpleDashboardLayout />
             </MUI.StyledEngineProvider>
         </React.StrictMode>
