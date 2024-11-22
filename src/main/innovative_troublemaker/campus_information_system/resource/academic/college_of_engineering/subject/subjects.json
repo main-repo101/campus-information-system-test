@@ -3,34 +3,34 @@
       {
         "title": "Data Structures",
         "description": "Learn efficient data management.",
-        "image": "/resources/college_of_engineering/subject/img/data-structures.jpg"
+        "image": "/resources/academic/college_of_engineering/img/com-eng-data-structure.jpg"
       },
       {
         "title": "Networking",
         "description": "Understand network protocols.",
-        "image": "/resources/college_of_engineering/subject/img/networking.jpg"
+        "image": "/resources/academic/college_of_engineering/img/com-eng-networking.jpg"
       },
       {
         "title": "AI",
         "description": "Dive into Artificial Intelligence.",
-        "image": "/resources/college_of_engineering/subject/img/ai.jpg"
+        "image": "/resources/academic/college_of_engineering/img/com-eng-ai.jpg"
       }
     ],
     "geodeticEngineering": [
       {
         "title": "Geodetic Surveys",
         "description": "Master land surveying techniques.",
-        "image": "/resources/college_of_engineering/subject/img/surveying.jpg"
+        "image": "/resources/academic/college_of_engineering/img/survey-001.jpg"
       },
       {
         "title": "GIS",
         "description": "Explore Geographic Information Systems.",
-        "image": "/resources/college_of_engineering/subject/img/gis.jpg"
+        "image": "/resources/academic/college_of_engineering/img/geo-gis.png"
       },
       {
         "title": "Remote Sensing",
         "description": "Analyze Earth data with sensors.",
-        "image": "/resources/college_of_engineering/subject/img/remote-sensing.jpg"
+        "image": "/resources/academic/college_of_engineering/img/geo-remote-sensing.jpeg"
       }
     ]
   }

@@ -114,7 +114,7 @@ export default class SimpleDashboardLayout extends React.Component {
                 router={router}
                 theme={TOOLPAD_THEME}
             >
-                <Toolpad.DashboardLayout drawer={{
+                <Toolpad.DashboardLayout sx={{}} drawer={{
                     collapsed: false
                 }}>
                     {/* <MUI.Drawer
@@ -130,7 +130,7 @@ export default class SimpleDashboardLayout extends React.Component {
                     >
                     </MUI.Drawer> */}
 
-                    <MUI.Box sx={{ px: 2, }} className={`w-[100%]`}>
+                    <MUI.Box sx={{ px: 2, }} className={`max-h-full`}>
                         {/* <ReactRouterDOM.BrowserRouter> */}
                         {/* <ReactRouterDOM.Routes> */}
                         <PageContent pathname={pathname} />

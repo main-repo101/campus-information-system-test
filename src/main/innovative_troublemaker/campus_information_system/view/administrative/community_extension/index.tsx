@@ -5,13 +5,13 @@ import React from 'react';
 // import "@innovative_troublemaker/campus_information_system/resource/administrative/community_extension/css/style.css";
 
 
-import "./community_ext_style.css";
+import "./community_ext_style.css"; 
 
 
 const CommunityExtensionServices: React.FC = () => {
     return (
         <>
-        <div className={`com-ext-container`} >
+        <div className={`com-ext-container w-full`} >
             <header id={`com-ext-header`}>
                 <div className="header-background"></div>
                 <h1 className={`com-ext-h1`}>Community Extension Services at St. John Paul College of Davao</h1>
@@ -59,20 +59,19 @@ const CommunityExtensionServices: React.FC = () => {
 
                 <h2 className={`com-ext-h2`}>Key Programs and Initiatives</h2>
                 <ul  id={`com-ext-ul`}>
-                    <li  className={`com-ext-li`}>
-                        <strong>Educational Workshops:</strong> <span>Tailored programs aimed at enhancing literacy and life skills among local residents, promoting lifelong learning.</span>
+                    <li key={0} className={`com-ext-li`}>
+                        <span className={`com-ext-lbl-programs-and-initiatives`}>Educational Workshops:</span> <span>Tailored programs aimed at enhancing literacy and life skills among local residents, promoting lifelong learning.</span>
                     </li>
-                    <li  className={`com-ext-li`}>
-                        <strong>Health Services:</strong> <span>Initiatives that provide free medical check-ups, health awareness campaigns, and wellness programs, ensuring the community has access to essential health information and services.</span>
+                    <li className={`com-ext-li`}>
+                        <span className={`com-ext-lbl-programs-and-initiatives`}>Health Services:</span> <span>Initiatives that provide free medical check-ups, health awareness campaigns, and wellness programs, ensuring the community has access to essential health information and services.</span>
                     </li>
-                    <li  className={`com-ext-li`}>
-                        <strong>Environmental Projects:</strong> <span>Programs focused on conservation, waste management, and sustainability efforts to ensure the local environment remains pristine and safe for future generations.</span>
+                    <li className={`com-ext-li`}>
+                        <span className={`com-ext-lbl-programs-and-initiatives`}>Environmental Projects:</span><span>Programs focused on conservation, waste management, and sustainability efforts to ensure the local environment remains pristine and safe for future generations.</span>
                     </li>
-                    <li  className={`com-ext-li`}>
-                        <strong>Support for Underprivileged Families:</strong> <span>Supports underprivileged families by offering affordable tuition and providing essential resources like food and school supplies. These efforts ensure that all students, regardless of financial background, have access to quality education and opportunities for a brighter future.</span>
+                    <li className={`com-ext-li`}>
+                        <span className={`com-ext-lbl-programs-and-initiatives`}>Support for Underprivileged Families:</span> <span>Supports underprivileged families by offering affordable tuition and providing essential resources like food and school supplies. These efforts ensure that all students, regardless of financial background, have access to quality education and opportunities for a brighter future.</span>
                     </li>
                 </ul>
-
                 <div className="image-box-container">
                     <div className="image-box">
                         <img src="/resources/administrative/community_extension/img/community1.jpg" alt="Community Service" />
@@ -84,6 +83,7 @@ const CommunityExtensionServices: React.FC = () => {
                         <img src="/resources/administrative/community_extension/img/community3.jpg" alt="Environmental Projects" />
                     </div>
                 </div>
+{/* 
 
                 <h2 className={`com-ext-h2`}>Community Impact</h2>
                 <div className="impact-container">
@@ -94,9 +94,8 @@ const CommunityExtensionServices: React.FC = () => {
                         and compassion among its students, ensuring that they grow into responsible citizens who care deeply about
                         their communities.
                     </p>
-                </div>
+                </div> */}
             </div>
-
             <footer id={`com-ext-footer`} className={`relative`}>
                 <div className="footer-content">
                     <p className={`com-ext-p`}>Address: Ecoland Dr, Matina, Davao City, 8000 Davao del Sur</p>

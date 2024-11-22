@@ -1,0 +1,11 @@
+{
+    "computerEngineering": [
+      { "name": "Core Curriculum", "link": "/resources/college_of_engineering/subject/computer-core.pdf" },
+      { "name": "Electives", "link": "/resources/academic/college_of_engineering/subject/computer-electives.pdf" }
+    ],
+    "geodeticEngineering": [
+      { "name": "Core Curriculum", "link": "/resources/academic/college_of_engineering/subject/geodetic-core.pdf" },
+      { "name": "Advanced Courses", "link": "/resources/academic/college_of_engineering/subject/geodetic-advanced.pdf" }
+    ]
+  }
+  

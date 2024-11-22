@@ -29,6 +29,11 @@ export default defineConfig({
           __dirname,
           "./src/.misc"
         ),
+      // "@public":
+      //   path.resolve(
+      //     __dirname,
+      //     "./public"
+      //   ),
     },
   },
   build: {

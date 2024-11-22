@@ -4,9 +4,9 @@ import SubjectCarousel from "@innovative_troublemaker/campus_information_system/
 import CurriculumDownload from "@innovative_troublemaker/campus_information_system/component/subject/CurriculumDownload";
 import PageLayout from "@innovative_troublemaker/campus_information_system/view/academic/department/college_of_engineering/layout/PageLayout";
 
-import subjects from "@innovative_troublemaker/campus_information_system/resource/college_of_engineering/subject/subjects.json";
+import subjects from "@innovative_troublemaker/campus_information_system/resource/academic/college_of_engineering/subject/subjects.json";
 
-import curriculums from "@innovative_troublemaker/campus_information_system/resource/college_of_engineering/subject/curriculum.json";
+import curriculums from "@innovative_troublemaker/campus_information_system/resource/academic/college_of_engineering/subject/curriculum.json";
 
 class ComputerEngineeringCampusInfoSystem extends React.Component<{},{}> {
   public render(): React.ReactElement {
@@ -15,7 +15,7 @@ class ComputerEngineeringCampusInfoSystem extends React.Component<{},{}> {
         <HeroSection />
        {/*REM: Computer Engineering Section */}
        <div id={`computer-engineering-section`} className="py-10 bg-orange-500/30">
-          <div className="max-w-7xl mx-auto px-4">
+          <div className="w-full">
             <h2 className="text-3xl font-bold text-rose-50 mb-6">Computer Engineering</h2>
             <p className="text-lg mb-8">
               Learn computing fundamentals and advanced topics in Computer Engineering.

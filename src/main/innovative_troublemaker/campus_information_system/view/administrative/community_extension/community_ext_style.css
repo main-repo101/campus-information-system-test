@@ -83,6 +83,7 @@
 
 .image-box-container {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     margin: 20px 0;
 }
@@ -134,7 +135,7 @@
 }
 
 #com-ext-ul .com-ext-li:before {
-    content: '?';
+    /* content: '?'; */
     color: #0056b3;
     margin-right: 10px;
     font-weight: bold;
@@ -202,9 +203,31 @@
     text-decoration: underline;
 }
 
+.com-ext-lbl-programs-and-initiatives {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
 
 @media screen and (max-width: 600px) {
     /* #com-ext-header {
       width: 50%;
     } */
-  }
+
+}
+
+
+@media screen and (max-width: 1100px) {
+
+    .com-ext-li {
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+    }
+
+    .image-box-container {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
