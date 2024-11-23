@@ -228,12 +228,12 @@ export const ROUTES: { readonly [key: string]: $model.IRouteData } = Object.free
     }),
     E_CLEARANCE: Object.freeze({
         ID: "E_CLEARANCE",
-        path: "/administrative/e-clearance",
+        path: "/administrative/e-clearance/ict",
         component: ViewEClearance,
         navigation: {
-            segment: "administrative/e-clearance",
-            title: "E Clearance",
-            icon: <MUIIcon.BusinessCenterSharp />
+            segment: "e-clearance/ict",
+            title: "ICT",
+            icon: <MUIIcon.SchoolRounded />
         }
     })
 });

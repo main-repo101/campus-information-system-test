@@ -13,6 +13,7 @@ export default function ViewEClearance(
         >
             Is it not properly loaded?&nbsp;
             <MUI.Box
+                className="hover:text-orange-500 transition ease-out duration-500"
                 component={`a`}
                 href={E_CLEARANCE_URL}
                 target={`_blank`}

@@ -12,7 +12,9 @@ const CurriculumDownload: React.FC<CurriculumDownloadProps> = ( props: Curriculu
             key={index}
             href={curriculum.link}
             download
-            className="bg-white shadow-md rounded-lg p-4 text-blue-500 hover:text-blue-700 transition hover:bg-orange-500 hover:text-white"
+            className="bg-white shadow-md rounded-lg p-4 text-blue-500 
+            transition ease-out duration-500
+            hover:bg-orange-500 hover:text-white hover:font-semibold"
           >
             <div className="flex items-center " >
               <span className="font-semibold text-lg">{curriculum.name}</span>

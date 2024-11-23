@@ -10,8 +10,11 @@ export default {
         
       },
       backgroundImage: {
-
+        "eng-comp": `url("/resources/academic/college_of_engineering/img/com-eng-networking.jpg")`,
       },
+      fontFamily: {
+        "auto-bus-bold": ["auto-bus-bold", "sans-serif"],
+      }
     },
   },
   plugins: [],

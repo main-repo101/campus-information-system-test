@@ -43,7 +43,14 @@ const NAVIGATION: Toolpad.Navigation = [
     ROUTES.OFFICE_OF_VICE_PRESIDENT.navigation,
     ROUTES.SPORT.navigation,
     ROUTES.COMMUNITY_EXTENSION.navigation,
-    ROUTES.E_CLEARANCE.navigation,
+    {
+        segment: 'administrative',
+        title: 'E-Clearance',
+        icon: <MUIIcon.ChecklistRtlRounded />,
+        children: [
+            ROUTES.E_CLEARANCE.navigation,
+        ],
+    },
     { segment: 'integrations', title: 'Integrations', icon: <MUIIcon.Layers /> },
 ];
 
@@ -104,18 +111,22 @@ export default class SimpleDashboardLayout extends React.Component {
         return (<>
 
             <Toolpad.AppProvider drawer={{
-                    collapsed: false
-                }}
+                    variant: "permanent",
+                    collapsed: false,
+                    open: true,
+                }} //REM: [TODO] not working drawer disable collapse
                 navigation={NAVIGATION}
                 branding={{
-                    logo: `[LOGO]`,
+                    logo: <><MUIIcon.SchoolRounded/></>,
                     title: `CAMPUS`,
                 }}
                 router={router}
                 theme={TOOLPAD_THEME}
             >
                 <Toolpad.DashboardLayout sx={{}} drawer={{
-                    collapsed: false
+                    variant: "permanent",
+                    collapsed: false,
+                    open: true,
                 }}>
                     {/* <MUI.Drawer
                         variant="persistent" // Set to persistent for collapsing behavior

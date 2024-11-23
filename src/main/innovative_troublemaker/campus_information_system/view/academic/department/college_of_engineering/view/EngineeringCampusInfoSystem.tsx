@@ -8,6 +8,8 @@ import subjects from "@innovative_troublemaker/campus_information_system/resourc
 
 import curriculums from "@innovative_troublemaker/campus_information_system/resource/academic/college_of_engineering/subject/curriculum.json";
 
+import imgBgSurvey from "@innovative_troublemaker/campus_information_system/resource/academic/college_of_engineering/img/survey-001.jpg";
+
 class ComputerEngineeringCampusInfoSystem extends React.Component<{},{}> {
   public render(): React.ReactElement {
     return (
@@ -27,8 +29,8 @@ class ComputerEngineeringCampusInfoSystem extends React.Component<{},{}> {
         </div>
 
         {/*REM: Geodetic Engineering Section */}
-        <div id={`geodetic-engineering-section`} className="py-10 bg-black/40">
-          <div className="max-w-7xl mx-auto px-4">
+        <div id={`geodetic-engineering-section`} className={`py-10 bg-[url('/resources/academic/college_of_engineering/img/com-eng-ai.jpg')] bg-no-repeat bg-cover bg-center`}>
+          <div className="max-w-7xl mx-auto px-4 bg-black/30 inset-0  backdrop-blur-sm">
             <h2 className="text-3xl font-bold text-rose-50 mb-6">Geodetic Engineering</h2>
             <p className="text-lg mb-8">
               Discover the science and techniques behind geodetic measurements and mapping.
