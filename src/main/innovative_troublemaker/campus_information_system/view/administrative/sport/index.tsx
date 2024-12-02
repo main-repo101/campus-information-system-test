@@ -7,7 +7,9 @@ const ViewSport: React.FC = () => {
 
     const handleClick = (event: React.MouseEvent) => {
         event.preventDefault();
-        setObj( "NEW IMAGE" );
+        setObj( (prev) => ( 
+            (prev !== "NEW IMAGE") ? "NEW IMAGE" : "🏀"
+        ));
     };
 
     return (
@@ -52,7 +54,6 @@ const ViewSport: React.FC = () => {
                         fontSize: "24px",
                         textAlign: "center",
                         marginBottom: "25px",
-                        color: "#333",             // Dark gray text
                         fontWeight: "bold",        // Make the text bold
                         letterSpacing: "1.5px",    // Slight spacing between letters
                         textShadow: "1px 1px 2px rgba(0, 0, 0, 0.2)", // Add a light shadow
@@ -65,7 +66,7 @@ const ViewSport: React.FC = () => {
                 <hr style={{ border: "1px dotted #ccc", margin: "30px 0" }} />
 
                 {/* Men's Basketball Section */}
-                <div style={{ padding: "20px", backgroundColor: "#f9f9f9", borderRadius: "10px" }}>
+                <div className={`bg-slate-500/80`} style={{ padding: "20px", backgroundColor: "", borderRadius: "10px" }}>
                     <h1 style={{ fontSize: "25px", textAlign: "center" }}>Men's Basketball Team 🏀</h1>
                     <p style={{ lineHeight: "1.6", textAlign: "center", marginBottom: "20px" }}>
                         Get the latest scores, highlights, and news from our school basketball team. Stay up to date with the team's games, performances, and achievements!
@@ -105,7 +106,7 @@ const ViewSport: React.FC = () => {
                 <hr style={{ border: "1px dotted #ccc", margin: "30px 0" }} />
 
                 {/* Women's Basketball Section */}
-                <div style={{ padding: "20px", backgroundColor: "#fff", borderRadius: "10px" }}>
+                <div className={`bg-rose-500/80`}   style={{ padding: "20px", borderRadius: "10px" }}>
                     <h1 style={{ fontSize: "25px", textAlign: "center" }}>Women's Basketball Team 🏀</h1>
                     <p style={{ lineHeight: "1.6", textAlign: "center", marginBottom: "20px" }}>
                         Celebrate the inspiring achievements of our school's women's basketball team. Follow the excitement of their matches, events, and stories that highlight their journey!
@@ -145,7 +146,7 @@ const ViewSport: React.FC = () => {
                 <hr style={{ border: "1px dotted #ccc", margin: "30px 0" }} />
 
                 {/* Sining Tala Section */}
-                <div style={{ padding: "20px", backgroundColor: "#f9f9f9", borderRadius: "10px" }}>
+                <div className={`bg-yellow-500/50`} style={{ padding: "20px", backgroundColor: "", borderRadius: "10px" }}>
                     <h1 style={{ fontSize: "33px", textAlign: "center" }}>Sining Tala 🎭</h1>
                     <p style={{ lineHeight: "1.6", textAlign: "center", marginBottom: "20px" }}>
                         Explore the world of artistry and culture with *Sining Tala*, where the rhythm of creativity meets the heart of our school's performances. Here, students and faculty unite in celebrating the beauty of art, music, drama, and dance.
