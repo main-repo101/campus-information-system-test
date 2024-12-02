@@ -10,8 +10,8 @@ export default {
         
       },
       backgroundImage: {
-        "eng-comp": `url("/resources/academic/college_of_engineering/img/com-eng-networking.jpg")`,
-        "geo-comp": `url("/resources/academic/college_of_engineering/img/survey-000.jpg")`,
+        "comp-eng": `url("/resources/academic/college_of_engineering/img/com-eng-ai.jpg")`,
+        "geo-eng": `url("/resources/academic/college_of_engineering/img/survey-000.jpg")`,
       },
       fontFamily: {
         "auto-bus-bold": ["auto-bus-bold", "sans-serif"],
