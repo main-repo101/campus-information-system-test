@@ -12,6 +12,9 @@ import FooterI from "@innovative_troublemaker/campus_information_system/componen
 
 import PageContent from "@innovative_troublemaker/campus_information_system/component/PageContent.tsx";
 
+
+import iconCampusLogo from "@innovative_troublemaker/campus_information_system/resource/img/sjp2cd-logo-002.png";
+
 type AuthProvider = {
     id: string;
     name: string;
@@ -54,17 +57,32 @@ const NAVIGATION: Toolpad.Navigation = [
     { segment: 'integrations', title: 'Integrations', icon: <MUIIcon.Layers /> },
 ];
 
+interface ISimpleDashboardLayoutProps {
+    title?: string;
+    miniTitle?: string;
+}
 
-export default class SimpleDashboardLayout extends React.Component {
-    state = {
-        pathname: window.location.pathname || '/',
-    };
+interface ISimpleDashboardLayoutState {
+    pathname: string; 
+    theTitle?: string;
+}
+
+export default class SimpleDashboardLayout extends React.Component<ISimpleDashboardLayoutProps, ISimpleDashboardLayoutState> {
+
+    public constructor(props: ISimpleDashboardLayoutProps) {
+        super(props);
+        this.state = {
+            pathname: window.location.pathname || '/',
+            theTitle: window.innerWidth < 1024 ? this.props.miniTitle : this.props.title,
+        };
+    }
 
     componentDidMount() {
         this.updateDocumentTitle(this.state.pathname);
-
         //REM: Set up listener for popstate events (back/forward navigation)
         window.addEventListener('popstate', this.handlePopState);
+        window.addEventListener("resize", this.handleResize);
+
     }
 
     componentDidUpdate(prevProps: any, prevState: any) {
@@ -76,28 +94,41 @@ export default class SimpleDashboardLayout extends React.Component {
     componentWillUnmount() {
         //REM: Clean up popstate listener when component unmounts
         window.removeEventListener('popstate', this.handlePopState);
+        window.removeEventListener("resize", this.handleResize);
+
     }
 
     handlePopState = () => {
         this.setState({ pathname: window.location.pathname });
     };
 
-    updateDocumentTitle(pathname: string) {
-        const title = ROUTES_GATE[pathname]?.navigation?.title ?? "Page Not Found";
+    updateDocumentTitle(pathname: string | URL ) {
+        const title = ROUTES_GATE[String(pathname)]?.navigation?.title ?? "Page Not Found";
         document.title = `${title} - Campus App`;
     }
 
-    navigate = (path: string | URL) => {
+    navigate = (path: string|URL) => {
         window.history.pushState(null, '', path);
-        this.setState({ pathname: path });
+        this.setState({
+            pathname: String(path) 
+        });
     };
 
-    handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-        this.setState({ [event.target.name]: event.target.value });
-    };
+    // handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    //     this.setState({ [event.target.name]: event.target.value });
+    // };
 
     handleSignIn = (provider: AuthProvider) => {
         console.log(`Signing in with ${provider.name}`);
+    };
+
+
+    //REM: Update state on window resize
+    handleResize = () => {
+        this.setState((prev) => ({
+            ...prev,
+            theTitle: window.innerWidth < 1024 ? this.props.miniTitle : this.props.title,
+        }));
     };
 
     render(): React.ReactElement {
@@ -117,8 +148,8 @@ export default class SimpleDashboardLayout extends React.Component {
                 }} //REM: [TODO] not working drawer disable collapse
                 navigation={NAVIGATION}
                 branding={{
-                    logo: <><MUIIcon.SchoolRounded/></>,
-                    title: `CAMPUS`,
+                    logo: <><img src={iconCampusLogo}/></>,
+                    title: this.state.theTitle??"<unknown>",
                 }}
                 router={router}
                 theme={TOOLPAD_THEME}
@@ -129,7 +160,7 @@ export default class SimpleDashboardLayout extends React.Component {
                     open: true,
                 }}>
                     {/* <MUI.Drawer
-                        variant="persistent" // Set to persistent for collapsing behavior
+                        variant="persistent" //REM: Set to persistent for collapsing behavior
                         open={false}
                         sx={{
                             width: 240,

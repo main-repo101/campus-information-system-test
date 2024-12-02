@@ -13,7 +13,7 @@ const ViewChapel = (): React.ReactElement => {
     };
 
     return (
-        <div className="container">
+        <div className="container ">
             <h1 style={{ fontSize: '48px', textAlign: 'center' }}>
                 St. John Paul II College of Davao
             </h1>

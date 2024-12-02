@@ -16,9 +16,11 @@ class ComputerEngineeringCampusInfoSystem extends React.Component<{},{}> {
       <PageLayout>
         <HeroSection />
        {/*REM: Computer Engineering Section */}
-       <div id={`computer-engineering-section`} className="py-10 bg-orange-500/30">
-          <div className="w-full">
-            <h2 className="text-3xl font-bold text-rose-50 mb-6">Computer Engineering</h2>
+       <div id={`computer-engineering-section`} className="
+       bg-geo-comp bg-no-repeat bg-cover py-10 bg-orange-500/30
+       ">
+          <div className="w-full bg-slate-50/2 backdrop-blur-sm text-slate-800">
+            <h2 className="text-3xl font-bold text-slate-800 mb-6">Computer Engineering</h2>
             <p className="text-lg mb-8">
               Learn computing fundamentals and advanced topics in Computer Engineering.
             </p>

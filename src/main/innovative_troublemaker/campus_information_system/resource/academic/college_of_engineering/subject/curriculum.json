@@ -1,11 +1,11 @@
 {
     "computerEngineering": [
-      { "name": "Core Curriculum", "link": "/resources/academic/college_of_engineering/subject/computer-core.txt" },
-      { "name": "Electives", "link": "/resources/academic/college_of_engineering/subject/computer-electives.txt" }
+      { "name": "Core Curriculum", "link": "/resources/academic/college_of_engineering/prospectus/computer-engineering-prospectus.pdf" },
+      { "name": "Electives", "link": "/resources/academic/college_of_engineering/prospectus/computer-electives.txt" }
     ],
     "geodeticEngineering": [
-      { "name": "Core Curriculum", "link": "/resources/academic/college_of_engineering/subject/geodetic-core.pdf" },
-      { "name": "Advanced Courses", "link": "/resources/academic/college_of_engineering/subject/geodetic-advanced.pdf" }
+      { "name": "Core Curriculum", "link": "/resources/academic/college_of_engineering/prospectus/geodetic-engineering-prospectus.pdf" },
+      { "name": "Advanced Courses", "link": "/resources/academic/college_of_engineering/prospectus/geodetic-advanced.txt" }
     ]
   }
   

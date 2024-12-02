@@ -1,12 +1,20 @@
 import * as React from "react";
-
+import * as MUI from "@mui/icons-material";
 
 const ViewSport: React.FC = () => {
+
+    const [getObj, setObj] = React.useState<String>("🏀");
+
+    const handleClick = (event: React.MouseEvent) => {
+        event.preventDefault();
+        setObj( "NEW IMAGE" );
+    };
+
     return (
         <>
-            <div className="container" style={{ fontFamily: "Arial, sans-serif", color: "#333" }}>
+            <div className="container" style={{ fontFamily: "Arial, sans-serif" }}>
                 <h1 style={{ fontSize: "35px", textAlign: "center", marginBottom: "30px" }}>
-                    Coach of the Basketball Teams 🏀
+                    Coach of the Basketball Teams <span onClick={handleClick}>{getObj}</span>
                 </h1>
 
                 {/* Main Image in Portrait View */}
@@ -50,7 +58,7 @@ const ViewSport: React.FC = () => {
                         textShadow: "1px 1px 2px rgba(0, 0, 0, 0.2)", // Add a light shadow
                     }}
                 >
-                    Howard P. Delgado
+                    Howard P. Delgado <span onClick={handleClick}>{getObj}</span>
                 </h1>
 
                 {/* Section Divider */}
