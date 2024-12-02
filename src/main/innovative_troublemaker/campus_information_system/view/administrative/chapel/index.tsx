@@ -20,7 +20,7 @@ const ViewChapel = (): React.ReactElement => {
             <div className="row my-4">
                 <div className="col-md-12 text-center">
                     <img
-                        src="/resources/administrative/chapel/img/chapel-000.png"
+                        src="/resources/administrative/chapel/img/chapel-000c.jpg"
                         alt="Chapel"
                         className="img-fluid rounded shadow mx-auto d-block"
                         style={{ maxWidth: '60%' }} // Adjust size to scale for different devices
@@ -37,13 +37,13 @@ const ViewChapel = (): React.ReactElement => {
                     <h3 style={{ fontSize: '25px' }} className="mt-4">Spiritual Development</h3>
                     <div className="d-flex justify-content-center align-items-center" style={{ display: 'flex', justifyContent: 'center', gap: '20px', alignItems: 'center' }}>
                         <img
-                            src="/resources/administrative/chapel/img/chapel-003.png"
+                            src="/resources/administrative/chapel/img/chapel-003a.png"
                             alt="Chapel"
                             style={{ maxWidth: '30%' }}
 
                         />
                         <img
-                            src="/resources/administrative/chapel/img/chapel-001.png"
+                            src="/resources/administrative/chapel/img/chapel-001a.jpg"
                             alt="Chapel"
                             style={{ maxWidth: '30%', }}
                         />
@@ -54,7 +54,7 @@ const ViewChapel = (): React.ReactElement => {
                     <h3 style={{ fontSize: '25px' }} className="mt-4">Community Building</h3>
                     <div className="d-flex justify-content-center align-items-center" style={{ display: 'flex', justifyContent: 'center', gap: '20px', alignItems: 'center' }}>
                         <img
-                            src="/resources/administrative/chapel/img/chapel-002.png"
+                            src="/resources/administrative/chapel/img/chapel-002a.jpg"
                             style={{ maxWidth: '20%' }}
 
                         />
@@ -67,7 +67,7 @@ const ViewChapel = (): React.ReactElement => {
                     <div className="row my-4">
                         <div className="col-md-12 text-center">
                             <img
-                                src="/resources/administrative/chapel/img/chapel-004.png"
+                                src="/resources/administrative/chapel/img/chapel-004a.jpg"
                                 alt="Chapel"
                                 className="img-fluid rounded shadow mx-auto d-block"
                                 style={{ maxWidth: '20%' }} // Adjust size to scale for different devices
@@ -79,12 +79,12 @@ const ViewChapel = (): React.ReactElement => {
                     <h1 style={{ fontSize: '25px' }} className="mt-4">Worship and Prayer</h1>
                     <div className="d-flex justify-content-center" style={{ display: 'flex', justifyContent: 'center', gap: '20px', alignItems: 'center' }}>
                         <img
-                            src="/resources/administrative/chapel/img/chapel-005.png"
+                            src="/resources/administrative/chapel/img/chapel-005a.jpg"
                             alt="Chapel"
                             style={{ maxWidth: '25%', margin: '10%px' }}
                         />
                         <img
-                            src="/resources/administrative/chapel/img/chapel-006.png"
+                            src="/resources/administrative/chapel/img/chapel-006a.jpg"
                             alt="Chapel"
                             style={{ maxWidth: '25%', margin: '10%px' }}
                         />
