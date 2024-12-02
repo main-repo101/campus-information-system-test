@@ -12,7 +12,7 @@ if (container) {
     const root = ReactDOM.createRoot(container);
     root.render(
         <React.StrictMode>
-            <MUI.StyledEngineProvider injectFirst={false}>
+            <MUI.StyledEngineProvider injectFirst={true}>
                 <SimpleDashboardLayout title={`Saint John Paull II College of Davao`} miniTitle={`SJP2CD`}/>
             </MUI.StyledEngineProvider>
         </React.StrictMode>

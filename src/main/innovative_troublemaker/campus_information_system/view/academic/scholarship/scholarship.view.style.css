@@ -1,0 +1,119 @@
+#scholarship {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #000000;
+  }
+  img{
+    width: 100%;
+  }
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header { 
+  text-align: center;
+  color: #ffffff;
+  padding: 50px; 
+	font-weight: bold;
+  background-image: url(/resources/academic/scholarship/img/sjp2cd.jpg);
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 20px;
+  }
+
+  .programs {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .header:hover {
+    background-color: #76b7f0;
+    transform: scale(1.02);
+    cursor: pointer;
+  }
+  
+  .staff {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 20px 0;
+  }
+  
+  .staff-member {
+    background-color: #f0f8ff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .staff-member:hover {
+    background-color: #76b7f0;
+    color: #0056b3;
+    transform: scale(1.02);
+    cursor: pointer;
+  }
+
+  .staff-member strong {
+    display: block;
+    font-size: 14px;
+    color: #001f3f;
+  }
+  
+  .staff-member span {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .programs, .requirements {
+    margin: 20px 0;
+  }
+  
+  .program-category {
+    margin-bottom: 15px;
+  }
+  
+  .program-category h3 {
+    font-size: 18px;
+    color: #001f3f;
+    font-weight: bold;
+
+  }
+  
+  .scholarship-ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .scholarship-ul li {
+    padding: 5px 0;
+    font-size: 14px;
+  }
+  
+  .footer {
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  .footer a {
+    color: #001f3f;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+    background-color: #76b7f0;
+    transform: scale(1.02);
+    cursor: pointer;
+  }

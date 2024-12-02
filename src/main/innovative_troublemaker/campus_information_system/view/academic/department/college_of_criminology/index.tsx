@@ -20,7 +20,7 @@ const ViewCollegeOfCriminology: React.FC = () => {
                 <main className="tree">
                     <div className="node head">
                         <div className="person" data-thought="Crime is born from broken systems, not broken people.">
-                            <img src="/resources/academic/department/college_of_criminology/img/sample.jpg" alt="Liezel Artogue, MSCJ"/>
+                            <img src="/resources/academic/department/college_of_criminology/img/artogue.jpg" className={`shadow-2xl shadow-white border-2 border-white`} alt="Liezel Artogue, MSCJ"/>
                                 <p>Liezel Artogue, MSCJ<br/><span className="title">RCRIM Program Head</span></p>
                         </div>
                     </div>
