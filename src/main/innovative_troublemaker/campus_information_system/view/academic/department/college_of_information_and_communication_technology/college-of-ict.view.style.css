@@ -1,34 +1,39 @@
-
-/* body {
+#col-ict {
     font-family: 'Arial', sans-serif;
     line-height: 1.8;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-} */
+    width: 100%;
+}
 
-.site-header {
+#col-ict header {
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 20rem;
     overflow: hidden;
     text-align: center;
 }
 
-.site-header img {
+#col-ict header img {
     width: 100%;
-    height: auto;
+    overflow-y: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-clip: content-box;
+    margin-bottom: 0;
 }
 
-#col-ict {
-    padding: 40px;
+#col-ict main {
+    /* padding: 40px; */
     flex-grow: 1;
 }
 
-.about-college {
+#col-ict .about-college {
     background: linear-gradient(to right, #e3f2fd, #d1eaff);
     margin: 30px 0;
     padding: 30px;
@@ -38,55 +43,104 @@
     color: #2c3e50;
 }
 
-.about-college h3 {
+#col-ict .about-college h3 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #01579b;
+    color: rgb(53, 23, 110);
     text-shadow: 2px 2px #b3e5fc;
 }
 
-.about-college p {
+#col-ict .about-college p {
     font-size: 1.3rem;
     line-height: 1.8;
     margin: 0 auto;
     max-width: 800px;
 }
 
-.teacher-section {
+#col-ict .career-opportunities {
+    background: url('/resources/academic/department/college_of_ict/img/comlab.jpg') no-repeat center center;
+    background-size: cover;
+    color: #2c3e50;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+#col-ict .career-opportunities h3 {
+    font-size: 2.25rem;
+    /* Slight increase for heading */
+    margin-bottom: 20px;
+}
+
+#col-ict .career-opportunities p {
+    font-size: 1.3rem;
+    /* Slight increase for paragraph */
+    margin-bottom: 20px;
+}
+
+#col-ict .career-list {
+    text-align: left;
+    margin: 20px auto;
+    max-width: 800px;
+    font-size: 1.2rem;
+}
+
+#col-ict .career-list li {
+    margin: 5px 0;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#col-ict .teacher-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     margin: 30px 0;
     padding: 30px;
     border-radius: 10px;
     text-align: center;
+    background-color: #e0f7fa;
 }
 
-.teacher-section h3 {
+#col-ict .teacher-section h3 {
     font-size: 3rem;
     margin-bottom: 20px;
-    background: linear-gradient(to right, #ff6f00, #ffb74d);
+    background: linear-gradient(to right, rgb(53, 23, 110), rgb(91, 59, 150));
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.teacher-section div img {
-    width: 100%;
+#col-ict .teacher-section img {
+    display: flex;
+    flex-direction: col;
+    justify-content: space-around;
     height: auto;
-    /* max-width: 800px; */
     margin: 20px 0;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
+/* #col-ict #groupie {
+    padding: auto;
+    margin: auto;
+    width: fit-content;
+    max-width: 800px;
+    padding-bottom: 3rem;
+} */
 
-.teacher-list {
+#col-ict .teacher-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     justify-items: center;
 }
 
-.teacher-info {
+#col-ict .teacher-info {
     background: white;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -96,42 +150,59 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.teacher-info img {
-    width: 180px;
-    height: 180px;
+#col-ict .teacher-info img {
+    width: 120px;
+    height: 120px;
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 15px;
 }
 
-.teacher-info:hover {
+#col-ict .teacher-info:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
-.teacher-info h4 {
-    font-size: 1.5rem;
+#col-ict .teacher-info h4 {
+    font-size: 1.3rem;
     margin: 10px 0;
-    color: #1b5e20;
+    color: rgb(53, 23, 110);
+    font-weight: bold;
 }
 
-.teacher-info p {
-    font-size: 1.2rem;
+#col-ict .teacher-info p {
+    font-size: 1rem;
     color: #555;
 }
 
-.center-teacher {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    max-width: 300px;
+#col-ict .teacher-info .role {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(65, 63, 63);
+    margin-top: 10px;
+    text-transform: capitalize;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    width: fit-content;
     margin-left: auto;
     margin-right: auto;
 }
 
-.site-footer {
+#col-ict .center-teacher {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+    margin-bottom: 40px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#col-ict footer {
     width: 100%;
     height: 200px;
     text-align: center;
@@ -144,7 +215,7 @@
     margin-top: auto;
 }
 
-.site-footer img {
+#col-ict footer img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -153,27 +224,26 @@
     left: 0;
 }
 
-.site-footer p {
+#col-ict footer p {
     font-size: 1.4rem;
     color: #ffffff;
     z-index: 10;
 }
 
 @media (max-width: 768px) {
-    .teacher-list {
+    #col-ict .teacher-list {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 480px) {
-    .teacher-list {
+    #col-ict .teacher-list {
         grid-template-columns: 1fr;
     }
 }
 
-
-#img-faculty  {
-    display: flex;
-    flex-direction: col;
-    justify-content: space-around;
+@media (max-width: 1200px) {
+    #col-ict header {
+        height: 10rem;
+    }
 }

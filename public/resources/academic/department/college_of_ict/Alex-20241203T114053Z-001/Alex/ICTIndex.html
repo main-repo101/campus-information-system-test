@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College of ICT - St. John Paul II College of Davao</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            position: relative;
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        header img {
+            width: 100%;
+            height: auto;
+        }
+
+        main {
+            padding: 40px;
+            flex-grow: 1;
+        }
+
+        .about-college {
+            background: linear-gradient(to right, #e3f2fd, #d1eaff);
+            margin: 30px 0;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .about-college h3 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: rgb(53, 23, 110);
+            text-shadow: 2px 2px #b3e5fc;
+        }
+
+        .about-college p {
+            font-size: 1.3rem;
+            line-height: 1.8;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+
+        .career-opportunities {
+            background: url('comlab.jpg') no-repeat center center; 
+            background-size: cover; 
+            color: #2c3e50; 
+            padding: 40px; 
+            border-radius: 10px; 
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+            position: relative; 
+        }
+
+        .career-opportunities h3 {
+            font-size: 2.25rem; /* Slight increase for heading */
+            margin-bottom: 20px;
+        }
+
+        .career-opportunities p {
+            font-size: 1.3rem; /* Slight increase for paragraph */
+            margin-bottom: 20px; 
+        }
+
+        .career-list {
+            text-align: left;
+            margin: 20px auto;
+            max-width: 800px;
+            font-size: 1.2rem;
+        }
+
+        .career-list li {
+            margin: 5px 0;
+            background: rgba(255, 255, 255, 0.7); 
+            padding: 5px; 
+            border-radius: 5px; 
+        }
+
+        .teacher-section {
+            margin: 30px 0;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            background-color: #e0f7fa;
+        }
+
+        .teacher-section h3 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            background: linear-gradient(to right, rgb(53, 23, 110), rgb(91, 59, 150));
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .teacher-section img {
+            width: 100%;
+            height: auto;
+            max-width: 800px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .teacher-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .teacher-info {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 90%;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .teacher-info img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .teacher-info:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .teacher-info h4 {
+            font-size: 1.3rem;
+            margin: 10px 0;
+            color: rgb(53, 23, 110);
+            font-weight: bold;
+        }
+
+        .teacher-info p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .teacher-info .role {
+            font-size: 1rem;
+            font-weight: 600;
+            color: rgb(65, 63, 63);
+            margin-top: 10px;
+            text-transform: capitalize;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 5px 10px;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .center-teacher {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+            max-width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        footer {
+            width: 100%;
+            height: 200px;
+            text-align: center;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            padding: 10px;
+            margin-top: auto;
+        }
+
+        footer img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+
+        footer p {
+            font-size: 1.4rem;
+            color: #ffffff;
+            z-index: 10;
+        }
+
+        @media (max-width: 768px) {
+            .teacher-list {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .teacher-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <img src="Capture2.PNG" alt="Header Image" class="header-image">
+    </header>
+
+    <main>
+        <section class="about-college" id="about-college">
+            <h3>About the College</h3>
+            <p>The College of Information and Communications Technology (ICT) at St. John Paul II College of Davao focuses on developing knowledge and skills in information technology, computer science, and related fields. Our programs prepare students for diverse opportunities in the tech industry, with a strong emphasis on practical experience and innovation.</p>
+        </section>
+
+        <section class="career-opportunities">
+            <h3>Career Opportunities in ICT</h3>
+            <p>ICT is an emerging field offering a variety of career paths to suit your skills and interests.</p>
+            <ul class="career-list">
+                <li>Software Engineer</li>
+                <li>Network Administrator</li>
+                <li>Data Scientist</li>
+                <li>Cloud Solutions Architect</li>
+                <li>Mobile App Developer</li>
+                <li>IT Project Manager</li>
+                <li>Cybersecurity Specialist</li>
+                <li>Business Analyst</li>
+                <li>Technical Support Engineer</li>
+                <li>Digital Marketing Analyst</li>
+                <li>System Administrator</li>
+                <li>Game Developer</li>
+        
+            </ul>
+        </section>
+
+        <section class="teacher-section" id="faculty-section">
+            <h3>Meet Our Faculty</h3>
+            <img src="it.jpg" alt="Group Faculty Photo">
+
+            <div class="teacher-info center-teacher">
+                <img src="teachers_pic/pic10.jpg" alt="Karen Shane Adorico-Priete">
+                <h4>Karen Shane Adorico-Priete</h4>
+                <p class="role">Elites Moderator/Program Head</p>
+            </div>
+
+            <div class="teacher-list">
+                <div class="teacher-info">
+                    <img src="teachers_pic/pic1.jpg" alt="Normiyah Taming">
+                    <h4>Mr. Normiyah Taming</h4>
+                    <p class="role">Full Time Instructor</p>
+                </div>
+                <div class="teacher-info">
+                    <img src="teachers_pic/pic2.jpg" alt="Gilbert Carnice">
+                    <h4>Ms. Gilbert Carnice</h4>
+                    <p class="role">Full Time Instructor</p>
+                </div>
+                <div class="teacher-info">
+                    <img src="teachers_pic/pic3.jpg" alt="Patrick Eleria">
+                    <h4>Patrick Eleria</h4>
+                    <p class="role">Full Time Instructor</p>
+                </div>
+                <div class="teacher-info">
+                    <img src="teachers_pic/pic4.jpg" alt="Stephen Kim Kenneth Espinosa">
+                    <h4>Stephen Kim Kenneth Espinosa</h4>
+                    <p class="role">Full Time Instructor</p>
+                </div>
+                <div class="teacher-info">
+                    <img src="teachers_pic/pic5.jpg" alt="Jomar John Asilo">
+                    <h4>Jomar John Asilo</h4>
+                    <p class="role">Full Time Instructor</p>
+                </div>
+                <div class="teacher-info">
+                    <img src="teachers_pic/pic6.jpg" alt="Arvin Jim Demafelis">
+                    <h4>Arvin Jim Demafelis</h4>
+                    <p class="role">Full Time Instructor</p>
+                </div>
+                <div class="teacher-info">
+                    <img src="teachers_pic/pic7.jpg" alt="Gladys Joven">
+                    <h4>Gladys Joven</h4>
+                    <p class="role">Part Time Instructor</p>
+                </div>
+                <div class="teacher-info">
+                    <img src="teachers_pic/pic8.jpg" alt="Marisa Ocoy">
+                    <h4>Marisa Ocoy</h4>
+                    <p class="role">Part Time Instructor</p>
+                </div>
+                <div class="teacher-info">
+                    <img src="teachers_pic/pic9.jpg" alt="Jose Rhyz Ismael">
+                    <h4>Jose Rhyz Ismael</h4>
+                    <p class="role">Part Time Instructor</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img src="blue2.jpg" alt="Footer Background">
+        <p>© 2024 St. John Paul II College of Davao - ICT Department</p>
+    </footer>
+</body>
+</html>
