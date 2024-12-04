@@ -8,7 +8,7 @@ const Footer: React.FC<FooterProps> = ({ companyInfo, socialLinks, footerLinks }
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           
           {/*REM: Company Info Section */}
-          <div>
+          <div className={`text-left`}>
             <h3 className="font-bold text-lg mb-2">{companyInfo.name}</h3>
             <p className="text-sm">{companyInfo.address}</p>
             <p className="text-sm">Phone: {companyInfo.phone}</p>
