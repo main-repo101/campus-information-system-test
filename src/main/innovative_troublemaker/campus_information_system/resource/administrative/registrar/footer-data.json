@@ -1,9 +1,9 @@
 {
     "companyInfo": {
         "name": "Office of the Registrar's",
-        "address": "123 Main St, City, Country",
-        "phone": "+123 456 7890",
-        "email": "helpdesk@registrar.com"
+        "address": "Ecoland Drive, Matina, Davao City, 8000",
+        "phone": "(Registrar's Office): (082) 297-2033",
+        "email": "info@sjp2cd.edu.ph"
     },
     "socialLinks": [
         { "platform": "Facebook", "url": "https://www.facebook.com/sjp2cdregistrarsoffice", "icon": "facebook" },
