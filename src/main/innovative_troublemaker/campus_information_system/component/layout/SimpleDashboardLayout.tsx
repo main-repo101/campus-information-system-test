@@ -173,7 +173,7 @@ export default class SimpleDashboardLayout extends React.Component<ISimpleDashbo
                     >
                     </MUI.Drawer> */}
 
-                    <MUI.Box sx={{ px: 2, }} className={`max-h-full`}>
+                    <MUI.Box sx={{ px: 2 }} className={`max-h-full`}>
                         {/* <ReactRouterDOM.BrowserRouter> */}
                         {/* <ReactRouterDOM.Routes> */}
                         <PageContent pathname={pathname} />
