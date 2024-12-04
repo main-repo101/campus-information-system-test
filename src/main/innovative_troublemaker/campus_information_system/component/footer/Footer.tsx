@@ -1,7 +1,19 @@
 import React from 'react';
 import { FooterProps } from "@innovative_troublemaker/campus_information_system/model/footer/FooterProps";
+import * as MUIIcon from "@mui/icons-material";
+
 
 const Footer: React.FC<FooterProps> = ({ companyInfo, socialLinks, footerLinks }) => {
+  const getIcon = (icon: string) => {
+    switch (icon.toLowerCase()) {
+      case 'fb':
+        return <MUIIcon.FacebookRounded />;
+      case 'linkedin':
+        return <MUIIcon.LinkedIn />;
+      default:
+        return <MUIIcon.LinkRounded />;
+    }
+  };
   return (
     <footer className="bg-gray-800 text-white py-8">
       <div className="container mx-auto px-4">
@@ -28,12 +40,12 @@ const Footer: React.FC<FooterProps> = ({ companyInfo, socialLinks, footerLinks }
           </div>
           
           {/*REM: Social Media Links Section */}
-          <div>
+          <div className={`flexflex-row place-items-center`}>
             <h3 className="font-bold text-lg mb-2">Follow Us</h3>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 flex-row place-items-center">
               {socialLinks.map((social, index) => (
                 <a key={index} href={social.url} target="_blank" rel="noopener noreferrer">
-                  <i className={`fab fa-${social.icon} text-2xl text-gray-400 hover:text-white`}></i>
+                  {getIcon(social.icon)}
                 </a>
               ))}
             </div>

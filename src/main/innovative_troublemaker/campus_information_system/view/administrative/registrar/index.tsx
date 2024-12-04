@@ -85,7 +85,7 @@ const ViewRegistrar: React.FC<RegistrarProps> = ({showTheCard=false}) => {
                             subtitle="We'd love to hear from you! Fill out the form below or reach out to us on social media."
                             onSubmit={handleFormSubmit}
                             socialLinks={[
-                                { icon: <FacebookRounded />, url: 'https://facebook.com' },
+                                { icon: <FacebookRounded />, url: 'https://www.facebook.com/sjp2cdregistrarsoffice' },
                                 { icon: <Twitter />, url: 'https://twitter.com' },
                                 { icon: <LinkedIn />, url: 'https://linkedin.com' },
                             ]}
