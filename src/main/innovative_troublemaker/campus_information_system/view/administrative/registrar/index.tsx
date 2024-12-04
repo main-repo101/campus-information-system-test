@@ -17,8 +17,11 @@ import LearnMore from "@innovative_troublemaker/campus_information_system/compon
 
 const cardMetadata: CardData[] = cardData;
 
+interface RegistrarProps {
+    showTheCard: boolean
+}
 
-const ViewRegistrar: React.FC = () => {
+const ViewRegistrar: React.FC<RegistrarProps> = ({showTheCard=false}) => {
 
     const handleFormSubmit = (data: { name: string; email: string; message: string }) => {
         console.log('Form Data Submitted:', data);
@@ -33,7 +36,7 @@ const ViewRegistrar: React.FC = () => {
             <Hero
                 title="Office of the Registrar"
                 subtitle="Discover the best services we have to offer."
-                backgroundImageUrl="https://via.placeholder.com/1920x1080"
+                backgroundImageUrl="/resources/administrative/registrar/img/org-chart-registrar.png"
                 overlayOpacity="bg-opacity-50"
                 actions={
                     <>
@@ -62,21 +65,20 @@ const ViewRegistrar: React.FC = () => {
                     imageSrc="/resources/administrative/registrar/img/org-chart-registrar.png"
                 />
             </div>
-            <div className={`pb-[5rem] pt-[5rem]`}>
+            {showTheCard&&<div className={`pb-[5rem] pt-[5rem]`}>
                 <CardList cards={cardMetadata} />
-            </div>
+            </div>}
             <LandingPage
                 id={'landing-page'}
                 isHeroShow={false}
                 hero={landingPageData.hero}
-                features={landingPageData.features}
                 testimonials={landingPageData.testimonials}
 
                 footerLinks={footerData.footerLinks}
                 companyInfo={footerData.companyInfo}
                 socialLinks={footerData.socialLinks}
             >
-                <div className="content gap-[5rem] flex flex-col">
+                <div className="content gap-[5rem] flex flex-col bg-transparent">
                     <div className={`flex flex-col w-full place-items-center p-[2rem]`}>
                         <Contact
                             title="Get in Touch"

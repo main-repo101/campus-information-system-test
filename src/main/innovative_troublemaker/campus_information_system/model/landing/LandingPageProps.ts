@@ -23,7 +23,7 @@ export interface LandingPageProps {
     id?: string;
     hero: HeroSection;
     isHeroShow?: boolean;
-    features: Feature[];
+    features?: Feature[];
     testimonials: Testimonial[];
     children?: React.ReactNode;
 }
