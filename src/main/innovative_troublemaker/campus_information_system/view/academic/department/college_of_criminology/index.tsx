@@ -20,8 +20,8 @@ const ViewCollegeOfCriminology: React.FC = () => {
                 <main className="tree">
                     <div className="node head">
                         <div className="person" data-thought="Crime is born from broken systems, not broken people.">
-                            <img src="/resources/academic/department/college_of_criminology/img/artogue.jpg" className={`shadow-2xl shadow-white border-2 border-white`} alt="Liezel Artogue, MSCJ"/>
-                                <p>Liezel Artogue, MSCJ<br/><span className="title">RCRIM Program Head</span></p>
+                            <img src="/resources/academic/department/college_of_criminology/img/artogue.jpg" className={`shadow-2xl shadow-white border-2 border-white`} alt="Liezel Artogue, MSCJ" />
+                            <p>Liezel Artogue, MSCJ<br /><span className="title">RCRIM Program Head</span></p>
                         </div>
                     </div>
                     <div className="branch-container">
@@ -39,26 +39,34 @@ const ViewCollegeOfCriminology: React.FC = () => {
                                     <p>Ms. Leelen C. Villanueva<br/><span className="title">RCRIM</span></p>
                             </div>
                             <div className="person" data-thought="Change the environment, change the outcome.">
-                                <img src="/resources/academic/department/college_of_criminology/img/sample.jpg" alt="Refugio"/>
-                                    <p>Refugio<br/><span className="title">RCRIM</span></p>
+                                <img src="/resources/academic/department/college_of_criminology/img/sample.jpg" alt="Mr. Jeomar Cervantes"/>
+                                    <p>Mr. Jeomar Cervantes<br/><span className="title">RCRIM</span></p>
                             </div>
                         </div>
                         <div className="branch">
                             <div className="person" data-thought="Punishment without progress is just a cycle.">
-                                <img src="/resources/academic/department/college_of_criminology/img/sample.jpg" alt="Ms. Diana Rose Lovitos"/>
-                                    <p>Ms. Diana Rose Lovitos<br/><span className="title">RCRIM</span></p>
+                                <img src="/resources/academic/department/college_of_criminology/img/sample.jpg" alt="Ms. Diana Rose Lovitos" />
+                                <p>Ms. Diana Rose Lovitos<br /><span className="title">RCRIM</span></p>
                             </div>
                             <div className="person" data-thought="To end crime, we must end the conditions that breed it.">
-                                <img src="/resources/academic/department/college_of_criminology/img/sample.jpg" alt="Kaluyya"/>
-                                    <p>Kaluyya<br/><span className="title">RCRIM</span></p>
+                                <img src="/resources/academic/department/college_of_criminology/img/sample.jpg" alt="Ms. Maria Fe Getalla" />
+                                <p>Ms. Maria Fe Getalla <br /><span className="title">RCRIM, LPT</span></p>
                             </div>
                             <div className="person" data-thought="Crime is a symptom; inequality is the disease.">
-                                <img src="/resources/academic/department/college_of_criminology/img/sample.jpg" alt="Zaneta"/>
-                                    <p>Zaneta<br/><span className="title">RCRIM</span></p>
+                                <img src="/resources/academic/department/college_of_criminology/img/sample.jpg" alt="Mr. Mark Gallarde" />
+                                <p>Mr. Mark Gallarde<br /><span className="title">RCRIM</span></p>
                             </div>
                             <div className="person" data-thought="Address the roots of crime, not just the branches.">
-                                <img src="/resources/academic/department/college_of_criminology/img/sample.jpg" alt="Ms. Janice"/>
-                                    <p>Ms. Janice<br/><span className="title">RCRIM</span></p>
+                                <img src="/resources/academic/department/college_of_criminology/img/sample.jpg" alt="Ms. Cly Langomes" />
+                                <p>Ms. Cly Langomes<br /><span className="title">RCRIM</span></p>
+                            </div>
+                            <div className="person" data-thought="Reform is the path; retribution is the dead end.">
+                                <img src="/resources/academic/department/college_of_criminology/img/sample.jpg" alt="Refugio" />
+                                <p>Refugio<br /><span className="title">RCRIM</span></p>
+                            </div>
+                            <div className="person" data-thought="Justice is found where empathy meets action.">
+                                <img src="/resources/academic/department/college_of_criminology/img/sample.jpg" alt="Ms. Janice" />
+                                <p>Caparas<br /><span className="title">RCRIM</span></p>
                             </div>
                         </div>
                     </div>
