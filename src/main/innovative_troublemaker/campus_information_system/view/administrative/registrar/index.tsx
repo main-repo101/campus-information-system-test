@@ -36,7 +36,7 @@ const ViewRegistrar: React.FC<RegistrarProps> = ({showTheCard=false}) => {
             <Hero
                 title="Office of the Registrar"
                 subtitle="Discover the best services we have to offer."
-                backgroundImageUrl="/resources/administrative/registrar/img/org-chart-registrar.png"
+                backgroundImageUrl="/resources/administrative/registrar/img/logo-000.jpg"
                 overlayOpacity="bg-opacity-50"
                 actions={
                     <>
