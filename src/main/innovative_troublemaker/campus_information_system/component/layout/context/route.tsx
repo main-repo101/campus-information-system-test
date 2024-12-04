@@ -38,6 +38,8 @@ import ViewCommunityExtension from "@innovative_troublemaker/campus_information_
 
 import ViewEClearance from "@innovative_troublemaker/campus_information_system/view/administrative/e_clearance/index.tsx";
 
+import ViewCollegeOfBusinessAdministration from "@innovative_troublemaker/campus_information_system/view/academic/department/college_of_business_administration/index.tsx";
+
 export const ROUTES: { readonly [key: string]: $model.IRouteData } = Object.freeze({
     HOME: Object.freeze({
         ID: "HOME",
@@ -233,6 +235,16 @@ export const ROUTES: { readonly [key: string]: $model.IRouteData } = Object.free
         navigation: {
             segment: "e-clearance/ict",
             title: "ICT",
+            icon: <MUIIcon.SchoolRounded />
+        }
+    }),
+    COLLEGE_OF_BUSINESS_ADMINISTRATION: Object.freeze({
+        ID: "COLLEGE_OF_BUSINESS_ADMINISTRATION",
+        path: "/academic/department/college-of-business-administration",
+        component: ViewCollegeOfBusinessAdministration,
+        navigation: {
+            segment: "department/college-of-business-administration",
+            title: "College of BA",
             icon: <MUIIcon.SchoolRounded />
         }
     })

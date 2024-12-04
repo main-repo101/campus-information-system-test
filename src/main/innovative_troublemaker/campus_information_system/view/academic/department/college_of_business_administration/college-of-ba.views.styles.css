@@ -1,0 +1,249 @@
+#col-ba {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#col-ba header {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#col-ba header img {
+    width: 100%;
+    height: auto;
+}
+
+#col-ba main {
+    padding: 40px;
+    flex-grow: 1;
+}
+
+#col-ba .about-college {
+    background: linear-gradient(to right, #e3f2fd, #d1eaff);
+    margin: 30px 0;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #2c3e50;
+}
+
+#col-ba .about-college h3 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: rgb(53, 23, 110);
+    text-shadow: 2px 2px #b3e5fc;
+}
+
+#col-ba .about-college p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+
+
+#col-ba .career-opportunities {
+    background: url('/resources/academic/department/college_of_ba/img/balab.jpg') no-repeat center center;
+    background-size: cover;
+    color: #2c3e50;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+#col-ba .career-opportunities h3 {
+    font-size: 2.25rem;
+    /* Slight increase for heading */
+    margin-bottom: 20px;
+}
+
+#col-ba .career-opportunities p {
+    font-size: 1.3rem;
+    /* Slight increase for paragraph */
+    margin-bottom: 20px;
+}
+
+#col-ba .Prospectus {
+    background: url('comlab.jpg') no-repeat center center;
+    background-size: cover;
+    color: #2c3e50;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+#col-ba .Prospectus h4 {
+    font-size: 2.25rem;
+    /* Slight increase for heading */
+    margin-bottom: 20px;
+}
+
+#col-ba .Prospectus img {
+    width: 1000px;
+    height: 900px;
+    justify-items: center;
+
+}
+
+#col-ba .career-list {
+    text-align: left;
+    margin: 20px auto;
+    max-width: 800px;
+    font-size: 1.2rem;
+}
+
+#col-ba .career-list li {
+    margin: 5px 0;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#col-ba .teacher-section {
+    margin: 30px 0;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #e0f7fa;
+}
+
+#col-ba .teacher-section h3 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, rgb(53, 23, 110), rgb(91, 59, 150));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#col-ba .teacher-section img {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+#col-ba .teacher-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+#col-ba .teacher-info {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#col-ba .teacher-info img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+#col-ba .teacher-info:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+#col-ba .teacher-info h4 {
+    font-size: 1.3rem;
+    margin: 10px 0;
+    color: rgb(53, 23, 110);
+    font-weight: bold;
+}
+
+#col-ba .teacher-info p {
+    font-size: 1rem;
+    color: #555;
+}
+
+#col-ba .teacher-info .role {
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(65, 63, 63);
+    margin-top: 10px;
+    text-transform: capitalize;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#col-ba .center-teacher {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#col-ba footer {
+    background: url('teachers_pic/blue.jpg') no-repeat center center;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    margin-top: auto;
+}
+
+#col-ba footer img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#col-ba footer p {
+    font-size: 1.4rem;
+    color: #ffffff;
+    z-index: 10;
+}
+
+@media (max-width: 768px) {
+    #col-ba .teacher-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    #col-ba .teacher-list {
+        grid-template-columns: 1fr;
+    }
+}
