@@ -31,7 +31,7 @@ export const Contact: React.FC<ContactProps> = ({
       {subtitle && <p className="text-gray-600 mt-2">{subtitle}</p>}
       <form onSubmit={handleSubmit} className="mt-6 space-y-4">
         <div>
-          <label htmlFor="name" className="block text-sm font-medium text-gray-700">
+          <label htmlFor="name" className="text-left block text-sm font-medium text-gray-700">
             Name
           </label>
           <input
@@ -41,11 +41,11 @@ export const Contact: React.FC<ContactProps> = ({
             value={formData.name}
             onChange={handleChange}
             required
-            className="mt-1 w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="mt-1 w-full px-4 py-2 border rounded-lg focus:outline-none text-black font-semibold bg-slate-500/10 focus:ring-2 focus:ring-blue-400"
           />
         </div>
         <div>
-          <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+          <label htmlFor="email" className="text-left block text-sm font-medium text-gray-700 ">
             Email
           </label>
           <input
@@ -55,11 +55,11 @@ export const Contact: React.FC<ContactProps> = ({
             value={formData.email}
             onChange={handleChange}
             required
-            className="mt-1 w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="mt-1 w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 text-black font-semibold bg-slate-500/10 "
           />
         </div>
         <div>
-          <label htmlFor="message" className="block text-sm font-medium text-gray-700">
+          <label htmlFor="message" className="text-left block text-sm font-medium text-gray-700">
             Message
           </label>
           <textarea
@@ -69,7 +69,7 @@ export const Contact: React.FC<ContactProps> = ({
             onChange={handleChange}
             required
             rows={4}
-            className="mt-1 w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="mt-1 w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 text-black font-semibold bg-slate-500/10 "
           ></textarea>
         </div>
         <button
@@ -81,7 +81,7 @@ export const Contact: React.FC<ContactProps> = ({
       </form>
       {socialLinks && socialLinks.length > 0 && (
         <div className="mt-6">
-          <h3 className="text-sm font-medium text-gray-700">Follow us:</h3>
+          <h3 className="text-sm font-medium text-gray-700 text-left">Follow us:</h3>
           <div className="flex space-x-4 mt-2">
             {socialLinks.map((link, index) => (
               <a

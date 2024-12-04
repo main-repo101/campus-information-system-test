@@ -42,7 +42,7 @@ const LandingPage: React.FC<LandingPageProps&FooterProps> = ({ id="pnl-landing-p
             {/*REM: Testimonials Section */}
             <section className="bg-gray-200 py-20">
                 <div className="container mx-auto text-center">
-                    <h2 className="text-3xl font-bold mb-8">What Our Precious Fruit Say</h2>
+                    <h2 className="text-3xl font-bold mb-8">What Our Cherished Fruits Reveal</h2>
                     <div className="flex flex-col items-center space-y-8">
                         {testimonials.map((testimonial, index) => (
                             <div key={index} className="bg-white p-6 rounded-lg shadow-lg max-w-md">

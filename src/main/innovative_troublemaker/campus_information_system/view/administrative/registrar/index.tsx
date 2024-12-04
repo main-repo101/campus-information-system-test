@@ -10,55 +10,12 @@ import Footer from "@innovative_troublemaker/campus_information_system/component
 import LandingPage from "@innovative_troublemaker/campus_information_system/component/landing/LandingPage";
 
 import landingPageData from "@innovative_troublemaker/campus_information_system/resource/administrative/registrar/landing-page-data.json";
+import footerData from "@innovative_troublemaker/campus_information_system/resource/administrative/registrar/footer-data.json";
+import cardData from "@innovative_troublemaker/campus_information_system/resource/administrative/registrar/card-data.json";
 
 import LearnMore from "@innovative_troublemaker/campus_information_system/component/learn_more/LearnMore";
 
-const cardMetadata: CardData[] = [
-    {
-        title: "Card Title 1",
-        description: "This is the description for card 1.",
-        image: "https://via.placeholder.com/150",
-        actions: [
-            { label: "Learn More", url: "https://example.com/learn-more" },
-            { label: "Contact Us", url: "https://example.com/contact" }
-        ]
-    },
-    {
-        title: "Card Title 2",
-        description: "This is the description for card 2.",
-        image: "https://via.placeholder.com/150",
-        actions: [
-            { label: "Learn More", url: "https://example.com/buy-now" }
-        ]
-    },
-    {
-        title: "Card Title 2",
-        description: "This is the description for card 2.",
-        image: "https://via.placeholder.com/150",
-        actions: [
-            { label: "Learn More", url: "https://example.com/buy-now" }
-        ]
-    }
-];
-
-const footerData = {
-    companyInfo: {
-        name: "Office of the Registrar's",
-        address: "123 Main St, City, Country",
-        phone: "+123 456 7890",
-        email: "helpdesk@registrar.com"
-    },
-    socialLinks: [
-        { platform: "Facebook", url: "https://facebook.com", icon: "facebook" },
-        { platform: "Twitter", url: "https://twitter.com", icon: "twitter" },
-        { platform: "LinkedIn", url: "https://linkedin.com", icon: "linkedin" }
-    ],
-    footerLinks: [
-        { label: "Privacy Policy", url: "/privacy" },
-        { label: "Terms of Service", url: "/terms" },
-        { label: "FAQ", url: "/faq" }
-    ]
-};
+const cardMetadata: CardData[] = cardData;
 
 
 const ViewRegistrar: React.FC = () => {
@@ -101,7 +58,8 @@ const ViewRegistrar: React.FC = () => {
                     buttonText="Inquire!"
                     buttonHref="#learn-more"
                     onButtonClick={handleLearnMoreClick}
-                    imageSrc="https://via.placeholder.com/300"
+                    // imageSrc="https://via.placeholder.com/300"
+                    imageSrc="/resources/administrative/registrar/img/org-chart-registrar.png"
                 />
             </div>
             <div className={`pb-[5rem] pt-[5rem]`}>
