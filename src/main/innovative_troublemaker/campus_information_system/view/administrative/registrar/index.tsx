@@ -1,13 +1,140 @@
 
 import * as React from "react";
 import * as MUI from "@mui/material";
+import CardList from "@innovative_troublemaker/campus_information_system/component/card/CardList";
+import { CardData } from "@innovative_troublemaker/campus_information_system/model/card/CardProps";
+import Hero from "@innovative_troublemaker/campus_information_system/component/hero/Hero";
+import Contact from "@innovative_troublemaker/campus_information_system/component/contact/Contact";
+import { FacebookRounded, Twitter, LinkedIn } from "@mui/icons-material";
+import Footer from "@innovative_troublemaker/campus_information_system/component/footer/Footer";
+import LandingPage from "@innovative_troublemaker/campus_information_system/component/landing/LandingPage";
+
+import landingPageData from "@innovative_troublemaker/campus_information_system/resource/administrative/registrar/landing-page-data.json";
+
+import LearnMore from "@innovative_troublemaker/campus_information_system/component/learn_more/LearnMore";
+
+const cardMetadata: CardData[] = [
+    {
+        title: "Card Title 1",
+        description: "This is the description for card 1.",
+        image: "https://via.placeholder.com/150",
+        actions: [
+            { label: "Learn More", url: "https://example.com/learn-more" },
+            { label: "Contact Us", url: "https://example.com/contact" }
+        ]
+    },
+    {
+        title: "Card Title 2",
+        description: "This is the description for card 2.",
+        image: "https://via.placeholder.com/150",
+        actions: [
+            { label: "Learn More", url: "https://example.com/buy-now" }
+        ]
+    },
+    {
+        title: "Card Title 2",
+        description: "This is the description for card 2.",
+        image: "https://via.placeholder.com/150",
+        actions: [
+            { label: "Learn More", url: "https://example.com/buy-now" }
+        ]
+    }
+];
+
+const footerData = {
+    companyInfo: {
+        name: "Office of the Registrar's",
+        address: "123 Main St, City, Country",
+        phone: "+123 456 7890",
+        email: "helpdesk@registrar.com"
+    },
+    socialLinks: [
+        { platform: "Facebook", url: "https://facebook.com", icon: "facebook" },
+        { platform: "Twitter", url: "https://twitter.com", icon: "twitter" },
+        { platform: "LinkedIn", url: "https://linkedin.com", icon: "linkedin" }
+    ],
+    footerLinks: [
+        { label: "Privacy Policy", url: "/privacy" },
+        { label: "Terms of Service", url: "/terms" },
+        { label: "FAQ", url: "/faq" }
+    ]
+};
 
 
 const ViewRegistrar: React.FC = () => {
+
+    const handleFormSubmit = (data: { name: string; email: string; message: string }) => {
+        console.log('Form Data Submitted:', data);
+    };
+
+    const handleLearnMoreClick = () => {
+        alert("Learn more clicked!");
+    };
+
     return (<>
-        <MUI.Typography variant={`innovativeTroublemakerH2`}>
-            Registrar!.
-        </MUI.Typography>
+        <div id="registrar" className={`flex flex-col place-items-center w-full `}>
+            <Hero
+                title="Office of the Registrar"
+                subtitle="Discover the best services we have to offer."
+                backgroundImageUrl="https://via.placeholder.com/1920x1080"
+                overlayOpacity="bg-opacity-50"
+                actions={
+                    <>
+                        <a href={"#landing-page"}>
+                            <button className="text-white bg-blue-500 px-6 py-2 rounded-md hover:bg-blue-600">
+                                Get Started
+                            </button>
+                        </a>
+                        <a href={"#learn-more"}>
+                            <button className="text-white border border-white px-6 py-2 rounded-md hover:bg-gray-100 hover:text-black">
+                                Learn More
+                            </button>
+                        </a>
+                    </>
+                }
+                className="custom-hero-class w-full"
+            />
+            <div id={`learn-more`} className={`flex flex-col place-items-center`}>
+                <LearnMore
+                    title="About Us"
+                    description="The registrar provides students with access to their academic records, enrollment and degree verification, academic calendars, and exam schedules along with other important student data."
+                    buttonText="Inquire!"
+                    buttonHref="#learn-more"
+                    onButtonClick={handleLearnMoreClick}
+                    imageSrc="https://via.placeholder.com/300"
+                />
+            </div>
+            <div className={`pb-[5rem] pt-[5rem]`}>
+                <CardList cards={cardMetadata} />
+            </div>
+            <LandingPage
+                id={'landing-page'}
+                isHeroShow={false}
+                hero={landingPageData.hero}
+                features={landingPageData.features}
+                testimonials={landingPageData.testimonials}
+
+                footerLinks={footerData.footerLinks}
+                companyInfo={footerData.companyInfo}
+                socialLinks={footerData.socialLinks}
+            >
+                <div className="content gap-[5rem] flex flex-col">
+                    <div className={`flex flex-col w-full place-items-center p-[2rem]`}>
+                        <Contact
+                            title="Get in Touch"
+                            subtitle="We'd love to hear from you! Fill out the form below or reach out to us on social media."
+                            onSubmit={handleFormSubmit}
+                            socialLinks={[
+                                { icon: <FacebookRounded />, url: 'https://facebook.com' },
+                                { icon: <Twitter />, url: 'https://twitter.com' },
+                                { icon: <LinkedIn />, url: 'https://linkedin.com' },
+                            ]}
+                            className="max-w-lg"
+                        />
+                    </div>
+                </div>
+            </LandingPage>
+        </div>
     </>)
 }
 
