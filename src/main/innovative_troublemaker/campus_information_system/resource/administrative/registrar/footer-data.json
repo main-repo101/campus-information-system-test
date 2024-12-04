@@ -6,7 +6,7 @@
         "email": "helpdesk@registrar.com"
     },
     "socialLinks": [
-        { "platform": "Facebook", "url": "https://facebook.com", "icon": "facebook" },
+        { "platform": "Facebook", "url": "https://www.facebook.com/sjp2cdregistrarsoffice", "icon": "facebook" },
         { "platform": "Twitter", "url": "https://twitter.com", "icon": "twitter" },
         { "platform": "LinkedIn", "url": "https://linkedin.com", "icon": "linkedin" }
     ],
