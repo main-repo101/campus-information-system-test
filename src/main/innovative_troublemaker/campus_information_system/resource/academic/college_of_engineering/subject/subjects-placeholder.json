@@ -1,0 +1,37 @@
+{
+    "computerEngineering": [
+      {
+        "title": "General Subjects I",
+        "description": "Description I",
+        "image": "https://placehold.co/150/gray/white/png"
+      },
+      {
+        "title": "General Subjects II",
+        "description": "Description II",
+        "image": "https://placehold.co/150/gray/white/png"
+      },
+      {
+        "title": "General Subjects III",
+        "description": "Description III",
+        "image": "https://placehold.co/150/gray/white/png"
+      }
+    ],
+    "geodeticEngineering": [
+      {
+        "title": "General Subjects I",
+        "description": "Description I",
+        "image": "https://placehold.co/150/gray/white/png"
+      },
+      {
+        "title": "General Subjects II",
+        "description": "Description II",
+        "image": "https://placehold.co/150/gray/white/png"
+      },
+      {
+        "title": "General Subjects III",
+        "description": "Description III",
+        "image": "https://placehold.co/150/gray/white/png"
+      }
+    ]
+  }
+  

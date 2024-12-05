@@ -48,12 +48,12 @@ const ViewCollegeOfICT: React.FC = () => {
                     <div className="teacher-list">
                         <div className="teacher-info center-teacher">
                             <img src="/resources/academic/department/college_of_ict/img/teachers_pic/pic1.jpg" alt="Normiyah Taming" />
-                            <h4>Mr. Normiyah Taming</h4>
+                            <h4>Normiyah Taming</h4>
                             <p className="role">Full Time Instructor</p>
                         </div>
                         <div className="teacher-info center-teacher">
                             <img src="/resources/academic/department/college_of_ict/img/teachers_pic/pic2.jpg" alt="Gilbert Carnice" />
-                            <h4>Ms. Gilbert Carnice</h4>
+                            <h4>Gilbert Carnice</h4>
                             <p className="role">Full Time Instructor</p>
                         </div>
                         <div className="teacher-info center-teacher">
