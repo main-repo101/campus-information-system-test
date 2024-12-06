@@ -8,7 +8,7 @@ import ViewCollegeOfEngineering from "@innovative_troublemaker/campus_informatio
 
 import ViewCollegeOfNursing from "@innovative_troublemaker/campus_information_system/view/academic/department/college_of_nursing/index.tsx";
 
-import ViewCollegeOfCriminology from "@innovative_troublemaker/campus_information_system/view/academic/department/college_of_criminology/index.tsx";
+import ViewCollegeOfCriminology from "@innovative_troublemaker/campus_information_system/view/academic/department/college_of_criminology/index";
 
 import ViewCollegeOfICT from "@innovative_troublemaker/campus_information_system/view/academic/department/college_of_information_and_communication_technology/index.tsx";
 
