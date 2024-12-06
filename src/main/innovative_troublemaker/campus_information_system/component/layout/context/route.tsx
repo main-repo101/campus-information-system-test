@@ -41,7 +41,7 @@ import ViewEClearance from "@innovative_troublemaker/campus_information_system/v
 import ViewCollegeOfBusinessAdministration from "@innovative_troublemaker/campus_information_system/view/academic/department/college_of_business_administration/index.tsx";
 import ViewQualityManagementOffice from "../../../view/administrative/quality_management_office";
 import ViewGuidanceOffice from "../../../view/administrative/guidance_office";
-import ViewCollegeOfPhysicalEducation from "../../../view/academic/department/college_of_physical_education";
+import ViewCollegeOfPhysicalEducation from "../../../view/academic/department/college_of_physical_education/index";
 import ViewCollgeOfHospotalityAndTourismManagement from "../../../view/academic/department/collge_of_chtm";
 import ViewPropertyCustodian from "../../../view/administrative/property_custodian";
 

@@ -1,90 +1,22 @@
 
 import * as React from "react";
-import "./college-of-pe.views.styles.css";
+import * as MUI from "@mui/material";
+
+
 const ViewCollegeOfPhysicalEducation: React.FC = () => {
-    return <>
-        <div id={`col-pe`}>
-            <main>
-                <div className="header-content">
-                    <img src="/resources/academic/department/college_of_pe/img/logotwo.png" alt="Logo 2" className="header-logo" />
-                    <img src="/resources/academic/department/college_of_pe/img/uno.png" alt="Logo 1" className="header-logo" />
-                    <h1>COLLEGE OF HUMAN KINETICS</h1>
-                </div>
-                <section>
-                    <h2>About the Course</h2>
-                    <p>Bachelor of Physical Education is a program designed to prepare professionals.
-                        A Bachelor of Physical Education (BPed) is a four-year undergraduate degree program that prepares students to teach physical education, health, and fitness.
-                        Where students can learn about student diversity, classroom management, motivation, instruction, and assessment.
-                        They also develop curricular plans to help students become proficient in movement.</p>
-                </section>
-
-                <section>
-                    <h2>Facilities</h2>
-                    <p>
-                        <strong>Roof Deck</strong><br />
-                        Our roof deck is a standout feature, designed to provide a perfect blend of functionality and relaxation.
-                        Situated on the topmost level, it offers a panoramic view of the surrounding area, making it an ideal space for a variety of activities.
-                    </p>
-                    <p>
-                        <strong>Features:</strong>
-                        <ul>
-                            <li>Open-Air Space: Enjoy the refreshing breeze and natural lighting, perfect for social gatherings, events, or a peaceful retreat.</li>
-                            <li>Seating Areas: Comfortable seating arrangements for students, faculty, and guests to relax or collaborate in a serene environment.</li>
-                            <li>Multi-Purpose Area: Designed to accommodate events such as meetings, group studies, workshops, or celebrations.</li>
-                        </ul>
-                    </p>
-                    <img src="/resources/academic/department/college_of_pe/img/facione.jpg" alt="Background" />
-                    <img src="/resources/academic/department/college_of_pe/img/facitwo.jpg" alt="Background" />
-                    <img src="/resources/academic/department/college_of_pe/img/bpepic.jpg" alt="Background" />
-                </section>
-
-                <section>
-                    <h2>Curriculum</h2>
-                    <p>
-                        <strong>About the Curriculum</strong><br />
-                        The Bachelor of Physical Education curriculum is carefully designed to equip students with theoretical knowledge and practical skills. It integrates comprehensive courses in physical education, health sciences, pedagogy, and sports management, ensuring graduates are well-prepared for various professional roles.
-                    </p>
-                    <p>
-                        <strong>Key Areas of Study:</strong>
-                        <ul>
-                            <li>Foundations of Physical Education</li>
-                            <li>Sports Science and Coaching</li>
-                            <li>Health and Wellness Education</li>
-                            <li>Curriculum and Instructional Design</li>
-                            <li>Internship and Field Practice</li>
-                        </ul>
-                    </p>
-                    <img src="/resources/academic/department/college_of_pe/img/currione.png" alt="Curriculum" />
-                    <img src="/resources/academic/department/college_of_pe/img/curritwo.png" alt="Curriculum" />
-                </section>
-
-                <section>
-                    <h2>Organizational Chart</h2>
-                    <p>
-                        <strong>About the Organizational Chart</strong><br />
-                        The organizational chart illustrates the structure of the College of Human Kinetics, showcasing the hierarchy and roles of faculty and staff members. It highlights the collaborative effort of various departments to achieve the college's mission and vision.
-                    </p>
-                    <p>
-                        <strong>Key Positions:</strong>
-                        <ul>
-                            <li>Organization Head</li>
-                            <li>Student Representatives</li>
-                        </ul>
-                    </p>
-                    <img src="/resources/academic/department/college_of_pe/img/orgone.jpg" alt="Organization" />
-                    <img src="/resources/academic/department/college_of_pe/img/orgtwo.jpg" alt="Organization" />
-                </section>
-            </main>
-
-            <footer>
-                <p>&copy; 2024 School Website</p>
-                <p> Contact Us For more information, feel free to contact us at: </p>
-                <p> Email: info@campus.edu.ph </p>
-                Phone: (82) 123-1234 | +63 912-1234-123
-            </footer>
-
+    return(<>
+        <div style={{ width: '100%', height: '100vh' }}>
+            <iframe
+                src="/resources/academic/department/college_of_pe/public/index.html/index.html"
+                style={{
+                    width: '100%',
+                    height: '100%',
+                    border: 'none',
+                }}
+                title="Embedded HTML"
+            ></iframe>
         </div>
-    </>
+    </>);
 }
 
 export default ViewCollegeOfPhysicalEducation;
