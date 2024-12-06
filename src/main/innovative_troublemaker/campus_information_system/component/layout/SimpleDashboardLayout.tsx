@@ -155,7 +155,8 @@ export default class SimpleDashboardLayout extends React.Component<ISimpleDashbo
                 }} //REM: [TODO] not working drawer disable collapse
                 navigation={NAVIGATION}
                 branding={{
-                    logo: <><img src={iconCampusLogo}/></>,
+                    // logo: <><img src={iconCampusLogo}/></>,
+                    logo: <><MUIIcon.LogoDevRounded/></>,
                     title: this.state.theTitle??"<unknown>",
                 }}
                 router={router}

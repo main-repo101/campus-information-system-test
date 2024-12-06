@@ -57,7 +57,7 @@ export function view_welcome(
 
             {/* Admission Link */}
             <MUI.Paper elevation={3} className="p-6 text-center">
-                <MUI.Link href="/admission" className="text-blue-500 hover:underline text-lg">
+                <MUI.Link href="/administrative/admission" className="text-blue-500 hover:underline text-lg">
                     Admissions
                 </MUI.Link>
             </MUI.Paper>

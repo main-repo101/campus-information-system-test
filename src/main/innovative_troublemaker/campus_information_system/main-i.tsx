@@ -18,7 +18,9 @@ if (container) {
                         <MUI.Typography className="text-[0.8rem] md:text-[1.5rem]">This is a test conducted solely for educational purposes.</MUI.Typography>
                     </div>
                     <div className={`temp-padding pt-[1.5rem] md:pt-[2rem] w-full `}></div>
-                <SimpleDashboardLayout title={`Saint John Paull II College of Davao`} miniTitle={`SJP2CD`} />
+                {/* <SimpleDashboardLayout title={`St. John Paull II College of Davao`} miniTitle={`SJP2CD`} /> */}
+                <SimpleDashboardLayout title={`Campus Information System`} miniTitle={`CIS`} />
+
                 </div>
             </MUI.StyledEngineProvider>
         </React.StrictMode>

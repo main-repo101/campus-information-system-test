@@ -176,10 +176,10 @@ export const ROUTES: { readonly [key: string]: $model.IRouteData } = Object.free
     }),
     ADMISSION: Object.freeze({
         ID: "ADMISSION",
-        path: "/adminstrative/admission",
+        path: "/administrative/admission",
         component: ViewAdmission,
         navigation: {
-            segment: "adminstrative/admission",
+            segment: "administrative/admission",
             title: "Admission",
             icon: <MUIIcon.JoinFullSharp />
         }
