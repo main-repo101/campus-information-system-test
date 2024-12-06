@@ -41,6 +41,7 @@ const NAVIGATION: Toolpad.Navigation = [
     { kind: 'header', title: 'Administrative' },
     ROUTES.ADMISSION.navigation,
     ROUTES.REGISTRAR.navigation,
+    ROUTES.QUALITY_MANAGEMENT_OFFICE.navigation,
     ROUTES.ACCOUNTING.navigation,
     ROUTES.OSA.navigation,
     ROUTES.CHAPEL.navigation,

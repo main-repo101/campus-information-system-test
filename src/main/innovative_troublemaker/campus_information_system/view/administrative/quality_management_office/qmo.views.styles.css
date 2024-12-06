@@ -1,0 +1,247 @@
+
+#administrative-qmo {
+    margin: 0;
+    padding: 0;
+}
+
+#administrative-qmo {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to right, #dadff7, #d6def8);
+    padding: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+#administrative-qmo nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#administrative-qmo ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #150aaf;
+}
+
+#administrative-qmo li {
+    float: left;
+}
+
+#administrative-qmo li a {
+    display: block;
+    color: rgb(238, 255, 7);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#administrative-qmo li a:hover {
+    background-color: #d9dd05;
+}
+
+#administrative-qmo .active {
+    background-color: #ffd903;
+}
+
+#administrative-qmo header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 0px;
+    color: rgb(255, 255, 255);
+}
+#administrative-qmo div.scroll-container {
+background-color: #333;
+overflow: auto;
+white-space: nowrap;
+padding: 10px;
+}
+
+#administrative-qmo div.scroll-container img {
+padding: 10px;
+}
+
+#administrative-qmo .logo {
+    height: 350px;
+    width: auto;
+    margin: 10px 0;
+    display: block;
+}
+
+#administrative-qmo h1 {
+    display: none;
+}
+
+#administrative-qmo .header-background {
+    width: 100%;
+    height: min-content;
+    background: url('/resources/administrative/qmo/img/HEADER2.png') no-repeat;
+    background-size: contain;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#administrative-qmo h2 {
+    color: #021a33;
+    margin-top: 20px;
+    border-bottom: 2px solid #021d3a;
+    padding-bottom: 5px;
+    font-size: 28px;
+}
+
+#administrative-qmo h3 {
+    color: #021a33;
+    font-size: 18px;
+}
+
+#administrative-qmo p {
+    margin-bottom: 20px;
+    text-align: justify;
+    font-size: 18px;
+}
+
+#administrative-qmo .vision,
+#administrative-qmo .container,
+#administrative-qmo .logo {
+    background-color: #e6f0ff;
+    color: #003366;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}
+
+#administrative-qmo .vision h3,
+#administrative-qmo .container h2 {
+    color: #004080;
+}
+
+#administrative-qmo .container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #e6f0ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+#administrative-qmo .image-box-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#administrative-qmo .image-box {
+    width: 250px;
+    height: 300px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#administrative-qmo .image-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#administrative-qmo .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+#administrative-qmo .image-box:hover img {
+    transform: scale(1.1);
+}
+
+#administrative-qmo .impact-container {
+    background-color: #e6f0ff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+#administrative-qmo .nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+#administrative-qmo footer {
+    background: url('/resources/administrative/qmo/img/FOOTER1.png') no-repeat center center;
+    background-size: cover;
+    padding: 40px 20px;
+    color: white;
+    text-align: center;
+    position: relative;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#administrative-qmo .footer-content {
+    z-index: 1;
+    margin-bottom: auto;
+}
+
+#administrative-qmo .footer-bottom {
+    padding: 10px 0;
+}
+
+#administrative-qmo .footer-bottom p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+
+#administrative-qmo .footer-content p {
+    font-size: 16px;
+}
+
+#administrative-qmo .footer-content p a {
+    color: #ffeb3b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#administrative-qmo .footer-content p a:hover {
+    text-decoration: underline;
+}
+
+#administrative-qmo .flex-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    width: 80%;
+}
+
+#administrative-qmo .left-container {
+    flex: 1;
+    margin-right: 20px;
+    background-color: #e6f0ff;
+    padding: 14px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#administrative-qmo .right-container {
+    flex: 2;
+}

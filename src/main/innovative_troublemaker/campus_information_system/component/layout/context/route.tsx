@@ -39,6 +39,7 @@ import ViewCommunityExtension from "@innovative_troublemaker/campus_information_
 import ViewEClearance from "@innovative_troublemaker/campus_information_system/view/administrative/e_clearance/index.tsx";
 
 import ViewCollegeOfBusinessAdministration from "@innovative_troublemaker/campus_information_system/view/academic/department/college_of_business_administration/index.tsx";
+import ViewQualityManagementOffice from "../../../view/administrative/quality_management_office";
 
 export const ROUTES: { readonly [key: string]: $model.IRouteData } = Object.freeze({
     HOME: Object.freeze({
@@ -247,7 +248,17 @@ export const ROUTES: { readonly [key: string]: $model.IRouteData } = Object.free
             title: "College of BA",
             icon: <MUIIcon.SchoolRounded />
         }
-    })
+    }),
+    QUALITY_MANAGEMENT_OFFICE: Object.freeze({
+        ID: "QUALITY_MANAGEMENT_OFFICE",
+        path: "/administrative/quality-management-office",
+        component: ViewQualityManagementOffice,
+        navigation: {
+            segment: "administrative/quality-management-office",
+            title: "Quality Management Office",
+            icon: <MUIIcon.ManageAccountsRounded />
+        }
+    }),
 });
 
 
