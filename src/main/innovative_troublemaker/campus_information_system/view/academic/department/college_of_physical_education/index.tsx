@@ -6,8 +6,8 @@ const ViewCollegeOfPhysicalEducation: React.FC = () => {
         <div id={`col-pe`}>
             <main>
                 <div className="header-content">
-                    <img src="/logotwo.png" alt="Logo 2" className="header-logo" />
-                    <img src="/uno.png" alt="Logo 1" className="header-logo" />
+                    <img src="/resources/academic/department/college_of_pe/img/logotwo.png" alt="Logo 2" className="header-logo" />
+                    <img src="/resources/academic/department/college_of_pe/img/uno.png" alt="Logo 1" className="header-logo" />
                     <h1>COLLEGE OF HUMAN KINETICS</h1>
                 </div>
                 <section>
@@ -33,9 +33,9 @@ const ViewCollegeOfPhysicalEducation: React.FC = () => {
                             <li>Multi-Purpose Area: Designed to accommodate events such as meetings, group studies, workshops, or celebrations.</li>
                         </ul>
                     </p>
-                    <img src="/facione.jpg" alt="Background" />
-                    <img src="/facitwo.jpg" alt="Background" />
-                    <img src="/bpepic.jpg" alt="Background" />
+                    <img src="/resources/academic/department/college_of_pe/img/facione.jpg" alt="Background" />
+                    <img src="/resources/academic/department/college_of_pe/img/facitwo.jpg" alt="Background" />
+                    <img src="/resources/academic/department/college_of_pe/img/bpepic.jpg" alt="Background" />
                 </section>
 
                 <section>
@@ -54,8 +54,8 @@ const ViewCollegeOfPhysicalEducation: React.FC = () => {
                             <li>Internship and Field Practice</li>
                         </ul>
                     </p>
-                    <img src="/currione.png" alt="Curriculum" />
-                    <img src="/curritwo.png" alt="Curriculum" />
+                    <img src="/resources/academic/department/college_of_pe/img/currione.png" alt="Curriculum" />
+                    <img src="/resources/academic/department/college_of_pe/img/curritwo.png" alt="Curriculum" />
                 </section>
 
                 <section>
@@ -71,8 +71,8 @@ const ViewCollegeOfPhysicalEducation: React.FC = () => {
                             <li>Student Representatives</li>
                         </ul>
                     </p>
-                    <img src="/orgone.jpg" alt="Organization" />
-                    <img src="/orgtwo.jpg" alt="Organization" />
+                    <img src="/resources/academic/department/college_of_pe/img/orgone.jpg" alt="Organization" />
+                    <img src="/resources/academic/department/college_of_pe/img/orgtwo.jpg" alt="Organization" />
                 </section>
             </main>
 

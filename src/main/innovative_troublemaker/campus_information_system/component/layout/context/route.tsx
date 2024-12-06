@@ -41,6 +41,7 @@ import ViewEClearance from "@innovative_troublemaker/campus_information_system/v
 import ViewCollegeOfBusinessAdministration from "@innovative_troublemaker/campus_information_system/view/academic/department/college_of_business_administration/index.tsx";
 import ViewQualityManagementOffice from "../../../view/administrative/quality_management_office";
 import ViewGuidanceOffice from "../../../view/administrative/guidance_office";
+import ViewCollegeOfPhysicalEducation from "../../../view/academic/department/college_of_physical_education";
 
 export const ROUTES: { readonly [key: string]: $model.IRouteData } = Object.freeze({
     HOME: Object.freeze({
@@ -268,6 +269,16 @@ export const ROUTES: { readonly [key: string]: $model.IRouteData } = Object.free
             segment: "administrative/guidance-office",
             title: "Guidance Office",
             icon: <MUIIcon.ManageAccountsRounded />
+        }
+    }),
+    COLLEGE_OF_PHYSICAL_EDUCATION: Object.freeze({
+        ID: "COLLEGE_OF_PHYSICAL_EDUCATION",
+        path: "/academic/department/college-of-physical-education",
+        component: ViewCollegeOfPhysicalEducation,
+        navigation: {
+            segment: "department/college-of-physical-education",
+            title: "College of PE",
+            icon: <MUIIcon.SchoolRounded />
         }
     }),
 });
