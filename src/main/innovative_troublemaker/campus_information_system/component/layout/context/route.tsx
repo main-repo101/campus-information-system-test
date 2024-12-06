@@ -44,6 +44,7 @@ import ViewGuidanceOffice from "../../../view/administrative/guidance_office";
 import ViewCollegeOfPhysicalEducation from "../../../view/academic/department/college_of_physical_education/index";
 import ViewCollgeOfHospotalityAndTourismManagement from "../../../view/academic/department/collge_of_chtm";
 import ViewPropertyCustodian from "../../../view/administrative/property_custodian";
+import ViewAcademicVicePresidentOffice from "../../../view/administrative/academic_vice_president_office";
 
 export const ROUTES: { readonly [key: string]: $model.IRouteData } = Object.freeze({
     HOME: Object.freeze({
@@ -300,6 +301,16 @@ export const ROUTES: { readonly [key: string]: $model.IRouteData } = Object.free
         navigation: {
             segment: "administrative/property-custodian",
             title: "Property Custodian",
+            icon: <MUIIcon.ManageAccountsRounded />
+        }
+    }),
+    ACADEMIC_VICE_PRESIDENT_OFFICE: Object.freeze({
+        ID: "ACADEMIC_VICE_PRESIDENT_OFFICE",
+        path: "/administrative/academic-vice-president-office",
+        component: ViewAcademicVicePresidentOffice,
+        navigation: {
+            segment: "administrative/academic-vice-president-office",
+            title: "AVP Office",
             icon: <MUIIcon.ManageAccountsRounded />
         }
     }),

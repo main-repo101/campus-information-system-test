@@ -44,6 +44,7 @@ const NAVIGATION: Toolpad.Navigation = [
     ROUTES.ADMISSION.navigation,
     ROUTES.REGISTRAR.navigation,
     ROUTES.QUALITY_MANAGEMENT_OFFICE.navigation,
+    ROUTES.ACADEMIC_VICE_PRESIDENT_OFFICE.navigation,
     ROUTES.GUIDANCE_OFFICE.navigation,
     ROUTES.ACCOUNTING.navigation,
     ROUTES.OSA.navigation,

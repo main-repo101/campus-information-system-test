@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. John Paul College of Davao - Community Extension Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(to right, #dadff7, #d6def8);
+            padding: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #150aaf;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: rgb(238, 255, 7);
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #d9dd05;
+        }
+
+        .active {
+            background-color: #ffd903;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 0px;
+            color: rgb(255, 255, 255);
+        }
+        div.scroll-container {
+            width: fit-content;
+    background-color: #333;
+    overflow: hidden;
+    white-space: nowrap;
+    /* padding: 10px; */
+  }
+  
+  div.scroll-container img {
+    padding: 10px;
+  }
+
+        .logo {
+            height: 350px;
+            width: auto;
+            margin: 10px 0;
+            display: block;
+        }
+
+        h1 {
+            display: none;
+        }
+
+        .header-background {
+            width: 100%;
+            height: 40vh;
+            background: url('HEADER2.png');
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #021a33;
+            margin-top: 20px;
+            border-bottom: 2px solid #021d3a;
+            padding-bottom: 5px;
+            font-size: 28px;
+        }
+
+        h3 {
+            color: #021a33;
+            font-size: 18px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            text-align: justify;
+            font-size: 18px;
+        }
+
+        .vision,
+        .container,
+        .logo {
+            background-color: #e6f0ff;
+            color: #003366;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin: 10px 0;
+        }
+
+        .vision h3,
+        .container h2 {
+            color: #004080;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #e6f0ff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .image-box-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .image-box {
+            width: 250px;
+            height: 300px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .image-box img {
+            width: 100%;
+ height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: transform 0.3s ease;
+        }
+
+        .image-box:hover img {
+            transform: scale(1.1);
+        }
+
+        .impact-container {
+            background-color: #e6f0ff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+        }
+
+        footer {
+            background: url('FOOTER1.png') no-repeat center center;
+            background-size: cover;
+            padding: 40px 20px;
+            color: white;
+            text-align: center;
+            position: relative;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .footer-content {
+            z-index: 1;
+            margin-bottom: auto;
+        }
+
+        .footer-bottom {
+            padding: 10px 0;
+        }
+
+        .footer-bottom p {
+            margin: 0;
+            font-size: 16px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        .footer-content p {
+            font-size: 16px;
+        }
+
+        .footer-content p a {
+            color: #ffeb3b;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .footer-content p a:hover {
+            text-decoration: underline;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px auto;
+            width: 80%;
+        }
+
+        .left-container {
+            flex: 1;
+            margin-right: 20px;
+            background-color: #e6f0ff;
+            padding: 14px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .right-container {
+            flex: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#academic">Academic</a></li>
+            <li><a href="student services">Student Services</a></li>
+            <li><a href="#offices">Offices</a></li>
+            <li style="float:right"><a class="active" href="#about" style="color: blue;">About</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="header-background"></div>
+        <h1> at St. John Paul College of Davao</h1>
+
+        
+        <div class="scroll-container ">
+            <img src="AVP1.png" alt="QMO">
+            <!-- <img src="1.png" alt=""> -->
+           
+          </div>
+    </header>
+
+    <div class="flex-container">
+        <div class="left-container">
+            <div class="image-box">
+                <img src="QMO1.jpg" alt="Environmental Projects">
+                
+            </div>
+            <h2 style="border-bottom: none; margin-bottom: 0; line-height: 1.2; text-align: center;" >Academic Vice President (AVP) OFFICERS</h2>
+        <p>Academic Vice President (AVP) officer plays a pivotal role in maintaining and enhancing 
+            the academic excellence of St. John Paul II College of Davao. With unwavering dedication,
+             the officer ensures that all educational programs, administrative processes, and student
+              services are continuously evaluated and improved to meet the highest standards.</p>
+               
+                <h2>Why the AVP OFFICE Matters?</h2>
+                <p>
+                    The Academic Vice President (AVP) in the Academic Office plays a crucial role in shaping the direction and success of an educational institution. Here are several reasons why the AVP matters:
+
+                    <h3>Leadership in Academic Excellence:</h3> The AVP is responsible for ensuring that the institution's academic programs meet the highest standards of quality. 
+
+                    <h3>Strategic Planning and Innovation:</h3> The AVP leads strategic initiatives aimed at enhancing educational offerings and adapting to the changing needs of students. This includes introducing innovative teaching methods, integrating new technologies, and fostering an inclusive and engaging learning environment.
+
+                    <h3>Quality Assurance and Accreditation:</h3> One of the key responsibilities of the AVP is ensuring the institution maintains accreditation and complies with external educational standards. 
+                    <h3>Support for Faculty and Staff:</h3> The AVP provides leadership and support for faculty, encouraging continuous professional development, research, and collaboration. By supporting educators, the AVP helps create a motivated and well-equipped teaching team, ensuring students receive a high-quality education.
+
+                    
+        </div>
+        <div class="right-container">
+            <div class="qmo" >
+                <h2 style="border-bottom: none; margin-bottom: 0; line-height: 1.2; text-align: center;" > Academic Vice President (AVP) – Academic Office</h2>
+        <h3 style="margin-top: 0; line-height: 1.2; text-align: center;">ST. JOHN PAUL II COLLEGE OF DAVAO</h3>
+        <p style="text-align: center;">
+        Welcome to the Office of the Academic Vice President (AVP) of St. John Paul II College of Davao.
+        As the hub of academic leadership and innovation, the AVP-Academic Office is committed to upholding the college’s
+        mission of delivering high-quality education that prepares our students for global
+        opportunities.
+        </p><hr>
+            
+            <div class="container">
+               <h2>About the AVP-Academic Office</h2>
+        <p>The Academic Vice President (AVP) of St. John Paul II College of Davao, responsible for overseeing and 
+            advancing the academic vision, policies, andprograms of the institution. The office plays a pivotal role 
+            in ensuring the continuous development of academic excellence, innovation in teaching and learning, and 
+            the promotion of student success.
+        </p>
+
+        <h2>Our Mission </h2>
+        
+            <p>The mission of the AVP-Academic Office is to ensure that all academic programs are designed 
+                and delivered with the highest quality, aligned with both national standards and global trends.
+                 We aim to foster an environment where faculty, staff, and students thrive through excellent 
+                 educational opportunities and innovative teaching methods.</p>
+       
+
+        <h2>Mission</h2>
+      
+            <p>The mission of the Academic Vice President (AVP) is to ensure academic excellence and promote a learning environment
+                 that fosters student success, innovation, and continuous improvement. By overseeing the development and 
+                 implementation of high-quality academic programs, supporting faculty growth, and maintaining accreditation 
+                 standards, the AVP plays a crucial role in enhancing the educational experience. They strive to create a
+                  culture of innovation, ensuring that students are well-prepared for the future while facilitating professional 
+                  development for faculty. Additionally, the AVP collaborates with stakeholders to align academic strategies with 
+                  institutional goals, ensuring the institution meets the evolving needs of students and the educational landscape.</p>
+        
+        
+            
+            <div class="image-box-container">
+                <div class="image-box">
+                    <img src="QMO2.jpg" alt="Community Service">
+                </div>
+                <div class="image-box">
+                    <img src="QMO3.jpg" alt="Health Services">
+                </div>
+            </div>
+            
+            </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>Address: Ecoland Dr, Matina, Davao City, 8000 Davao del Sur</p>
+            <p>Contact: (082) 297 8755</p>
+            <p><a href="#">Terms and Conditions</a> | <a href="#">Privacy Policy</a> | <a href="#">FAQs</a> | <a href="#">Contact Us</a></p>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 St. John Paul College of Davao. All Rights Reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
