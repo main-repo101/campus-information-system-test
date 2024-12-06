@@ -3,11 +3,11 @@ import * as React from "react";
 import * as MUI from "@mui/material";
 
 
-const ViewCollegeOfNursing: React.FC = () => {
+const ViewPropertyCustodian: React.FC = () => {
     return(<>
         <div style={{ width: '100%', height: '100vh' }}>
             <iframe
-                src="/resources/academic/department/college_of_nursing/index.html"
+                src="/resources/administrative/property_custodian/index.html"
                 style={{
                     width: '100%',
                     height: '100%',
@@ -19,4 +19,4 @@ const ViewCollegeOfNursing: React.FC = () => {
     </>);
 }
 
-export default ViewCollegeOfNursing;
+export default ViewPropertyCustodian;

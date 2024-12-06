@@ -51,6 +51,7 @@ const NAVIGATION: Toolpad.Navigation = [
     ROUTES.OFFICE_OF_VICE_PRESIDENT.navigation,
     ROUTES.SPORT.navigation,
     ROUTES.COMMUNITY_EXTENSION.navigation,
+    ROUTES.PROPERTY_CUSTODIAN.navigation,
     {
         segment: 'administrative',
         title: 'E-Clearance',

@@ -43,6 +43,7 @@ import ViewQualityManagementOffice from "../../../view/administrative/quality_ma
 import ViewGuidanceOffice from "../../../view/administrative/guidance_office";
 import ViewCollegeOfPhysicalEducation from "../../../view/academic/department/college_of_physical_education";
 import ViewCollgeOfHospotalityAndTourismManagement from "../../../view/academic/department/collge_of_chtm";
+import ViewPropertyCustodian from "../../../view/administrative/property_custodian";
 
 export const ROUTES: { readonly [key: string]: $model.IRouteData } = Object.freeze({
     HOME: Object.freeze({
@@ -290,6 +291,16 @@ export const ROUTES: { readonly [key: string]: $model.IRouteData } = Object.free
             segment: "department/college-of-hospitality-and-tourism-management",
             title: "College of CHTM",
             icon: <MUIIcon.SchoolRounded />
+        }
+    }),
+    PROPERTY_CUSTODIAN: Object.freeze({
+        ID: "PROPERTY_CUSTODIAN",
+        path: "/administrative/property-custodian",
+        component: ViewPropertyCustodian,
+        navigation: {
+            segment: "administrative/property-custodian",
+            title: "Property Custodian",
+            icon: <MUIIcon.ManageAccountsRounded />
         }
     }),
 });
