@@ -36,6 +36,7 @@ const NAVIGATION: Toolpad.Navigation = [
             ROUTES.COLLEGE_OF_EDUCATION.navigation,
             ROUTES.COLLEGE_OF_BUSINESS_ADMINISTRATION.navigation,
             ROUTES.COLLEGE_OF_PHYSICAL_EDUCATION.navigation,
+            ROUTES.COLLEGE_OF_HOSTPITALITY_AND_TOURISM_MANAGEMENT.navigation,
         ],
     },
     { kind: 'divider' },

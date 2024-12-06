@@ -42,6 +42,7 @@ import ViewCollegeOfBusinessAdministration from "@innovative_troublemaker/campus
 import ViewQualityManagementOffice from "../../../view/administrative/quality_management_office";
 import ViewGuidanceOffice from "../../../view/administrative/guidance_office";
 import ViewCollegeOfPhysicalEducation from "../../../view/academic/department/college_of_physical_education";
+import ViewCollgeOfHospotalityAndTourismManagement from "../../../view/academic/department/collge_of_chtm";
 
 export const ROUTES: { readonly [key: string]: $model.IRouteData } = Object.freeze({
     HOME: Object.freeze({
@@ -278,6 +279,16 @@ export const ROUTES: { readonly [key: string]: $model.IRouteData } = Object.free
         navigation: {
             segment: "department/college-of-physical-education",
             title: "College of PE",
+            icon: <MUIIcon.SchoolRounded />
+        }
+    }),
+    COLLEGE_OF_HOSTPITALITY_AND_TOURISM_MANAGEMENT: Object.freeze({
+        ID: "COLLEGE_OF_HOSTPITALITY_AND_TOURISM_MANAGEMENT",
+        path: "/academic/department/college-of-hospitality-and-tourism-management",
+        component: ViewCollgeOfHospotalityAndTourismManagement,
+        navigation: {
+            segment: "department/college-of-hospitality-and-tourism-management",
+            title: "College of CHTM",
             icon: <MUIIcon.SchoolRounded />
         }
     }),
