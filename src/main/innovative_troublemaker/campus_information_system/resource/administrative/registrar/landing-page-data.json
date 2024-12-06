@@ -1,0 +1,39 @@
+{
+    "hero": {
+        "title": "Welcome to Our Service",
+        "subtitle": "We offer the best solutions for your needs.",
+        "cta1": "Get Started",
+        "cta1Url": "/signup",
+        "cta2": "Learn More",
+        "cta2Url": "/about"
+    },
+    "features": [
+        {
+            "title": "Feature One",
+            "description": "This is a description of the first feature.",
+            "icon": "star"
+        },
+        {
+            "title": "Feature Two",
+            "description": "This is a description of the second feature.",
+            "icon": "rocket"
+        },
+        {
+            "title": "Feature Three",
+            "description": "This is a description of the third feature.",
+            "icon": "shield"
+        }
+    ],
+    "testimonials": [
+        {
+            "name": "Alumni 2018 (This is simply a placeholder account/testimonial.)",
+            "feedback": "Their services transformed how students embrace responsibility. Highly commendable!",
+            "position": "CEO, Somewhere Corp"
+        },
+        {
+            "name": "Alumni 2021 (This is simply a placeholder account/testimonial.)",
+            "feedback": "An amazing experience! The service was excellent.",
+            "position": "Marketing Director, Another Co."
+        }
+    ]
+}

@@ -8,11 +8,11 @@ export default defineConfig({
   plugins: [react()],
   envPrefix: "IT_",
   server: {
-    port: 8008,
+    port: 8007,
     open: true,
   },
   preview: {
-    port: 8009,
+    port: 8005,
     open: true,
   },
   //REM: Do we need to add plugin for this to reduce redundancy? See @ `./tsconfig.app.json`
@@ -29,6 +29,11 @@ export default defineConfig({
           __dirname,
           "./src/.misc"
         ),
+      // "@public":
+      //   path.resolve(
+      //     __dirname,
+      //     "./public"
+      //   ),
     },
   },
   build: {

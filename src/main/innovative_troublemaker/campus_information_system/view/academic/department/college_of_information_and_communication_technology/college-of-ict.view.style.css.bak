@@ -1,0 +1,179 @@
+
+/* body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+} */
+
+.site-header {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.site-header img {
+    width: 100%;
+    height: auto;
+}
+
+#col-ict {
+    padding: 40px;
+    flex-grow: 1;
+}
+
+.about-college {
+    background: linear-gradient(to right, #e3f2fd, #d1eaff);
+    margin: 30px 0;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #2c3e50;
+}
+
+.about-college h3 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #01579b;
+    text-shadow: 2px 2px #b3e5fc;
+}
+
+.about-college p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.teacher-section {
+    margin: 30px 0;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.teacher-section h3 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #ff6f00, #ffb74d);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.teacher-section div img {
+    width: 100%;
+    height: auto;
+    /* max-width: 800px; */
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+
+.teacher-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+}
+
+.teacher-info {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.teacher-info img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.teacher-info:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.teacher-info h4 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #1b5e20;
+}
+
+.teacher-info p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.center-teacher {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.site-footer {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    margin-top: auto;
+}
+
+.site-footer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.site-footer p {
+    font-size: 1.4rem;
+    color: #ffffff;
+    z-index: 10;
+}
+
+@media (max-width: 768px) {
+    .teacher-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .teacher-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+#img-faculty  {
+    display: flex;
+    flex-direction: col;
+    justify-content: space-around;
+}

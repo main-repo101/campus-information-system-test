@@ -10,5 +10,3 @@ export namespace $innovative_troublemaker$campus_information_system$model$theme 
 }
 
 export type IThemeState = $innovative_troublemaker$campus_information_system$model$theme.IThemeState;
-
-

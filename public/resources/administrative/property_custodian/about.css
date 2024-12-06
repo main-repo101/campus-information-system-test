@@ -1,0 +1,139 @@
+/* Light Mode Styles (default) */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fa; /* Light background for readability */
+    color: #333; /* Dark text for contrast */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: rgb(255, 255, 255); /* Standard blue color for header */
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+    animation: fadeIn 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .sjp2cd {
+    max-width: 100x; /* Further reduced size for a smaller logo */
+    height: auto;
+    margin-bottom: 10px; /* Space between the logo and the title */
+    border-radius: 8px; /* Optional: Rounded corners for a softer look */
+    box-shadow: 0 0cap 0px rgba(0, 0, 0, 0.2); /* Optional: Subtle shadow for depth */
+}
+
+header h1 {
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Shadow for the header text */
+}
+
+header:hover {
+    background-color: #ffffff; /* Slightly lighter blue on hover */
+    transform: translateY(-5px);
+}
+
+.guidance-office {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white; /* White background for content */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.quotes {
+    margin-top: 20px;
+}
+
+blockquote {
+    font-style: italic;
+    color: #555;
+    margin: 20px 0;
+    padding: 15px;
+    border-left: 4px solid #3498db; /* Accent color - bright blue */
+    background-color: #ade6ee; /* Light blue background for quotes */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333333; /* Gray color for footer */
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+footer:hover {
+    background-color: #000000; /* Black on hover */
+    transform: translateY(-5px);
+}
+
+footer a {
+    color: #3498db; /* Accent color - bright blue */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #3498db; /* Accent color */
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+footer a:hover {
+    background-color: #3498db; /* Accent color */
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text for contrast */
+}
+
+header.dark-mode {
+    background-color: #1f1f1f; /* Darker header background */
+    color: #e0e0e0; /* Light text */
+}
+
+.guidance-office.dark-mode {
+    background-color: #1e1e1e; /* Dark background for content */
+}
+
+blockquote.dark-mode {
+    color: #bbb;
+    background-color: #2a2a2a; /* Dark background for quotes */
+    border-left-color: #bb86fc; /* Accent color - purple */
+}
+
+footer.dark-mode {
+    background-color: #1f1f1f; /* Darker footer background */
+}
+
+footer a.dark-mode {
+    color: #bb86fc; /* Accent color - purple */
+    border-color: #bb86fc;
+}
+
+footer a.dark-mode:hover {
+    background-color: #bb86fc; /* Accent color */
+    color: #121212;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+

@@ -1,13 +1,21 @@
 
 import * as React from "react";
 import * as MUI from "@mui/material";
-import * as MUIIcon from "@mui/icons-material";
+
 
 const ViewCollegeOfCriminology: React.FC = () => {
-    return (<>
-    <MUI.Typography variant={`h2`}>
-        College Of Criminology.
-    </MUI.Typography>    
+    return(<>
+        <div style={{ width: '100%', height: '100vh' }}>
+            <iframe
+                src="/resources/academic/department/college_of_criminology/public/index.html"
+                style={{
+                    width: '100%',
+                    height: '100%',
+                    border: 'none',
+                }}
+                title="Embedded HTML"
+            ></iframe>
+        </div>
     </>);
 }
 

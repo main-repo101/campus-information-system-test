@@ -1,0 +1,27 @@
+[
+    {
+        "title": "Card Title 1zzz",
+        "description": "This is the description for card 1.",
+        "image": "https://via.placeholder.com/150",
+        "actions": [
+            { "label": "Learn More", "url": "https://example.com/learn-more" },
+            { "label": "Contact Us", "url": "https://example.com/contact" }
+        ]
+    },
+    {
+        "title": "Card Title 2",
+        "description": "This is the description for card 2.",
+        "image": "https://via.placeholder.com/150x150",
+        "actions": [
+            { "label": "Learn More", "url": "https://example.com/buy-now" }
+        ]
+    },
+    {
+        "title": "Card Title 2",
+        "description": "This is the description for card 2.",
+        "image": "https://via.placeholder.com/150",
+        "actions": [
+            { "label": "Learn More", "url": "https://example.com/buy-now" }
+        ]
+    }
+]

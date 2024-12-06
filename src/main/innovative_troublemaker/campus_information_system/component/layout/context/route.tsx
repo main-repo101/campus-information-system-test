@@ -8,9 +8,11 @@ import ViewCollegeOfEngineering from "@innovative_troublemaker/campus_informatio
 
 import ViewCollegeOfNursing from "@innovative_troublemaker/campus_information_system/view/academic/department/college_of_nursing/index.tsx";
 
-import ViewCollegeOfCriminology from "@innovative_troublemaker/campus_information_system/view/academic/department/college_of_criminology/index.tsx";
+import ViewCollegeOfCriminology from "@innovative_troublemaker/campus_information_system/view/academic/department/college_of_criminology/index";
 
 import ViewCollegeOfICT from "@innovative_troublemaker/campus_information_system/view/academic/department/college_of_information_and_communication_technology/index.tsx";
+
+import ViewCollegeOfEduction from "@innovative_troublemaker/campus_information_system/view/academic/department/college_of_education/index.tsx";
 
 import ViewOSA from "@innovative_troublemaker/campus_information_system/view/administrative/office_of_student_affairs/index.tsx";
 
@@ -30,8 +32,19 @@ import ViewAccounting from "@innovative_troublemaker/campus_information_system/v
 
 import ViewRegistrar from "@innovative_troublemaker/campus_information_system/view/administrative/registrar/index.tsx";
 
-//REM: [TODO, TEMP, ANY_KEYWORD]
+import ViewOfficeOfVicePresident from "@innovative_troublemaker/campus_information_system/view/administrative/office_of_vice_president/index.tsx";
 
+import ViewCommunityExtension from "@innovative_troublemaker/campus_information_system/view/administrative/community_extension/index.tsx";
+
+import ViewEClearance from "@innovative_troublemaker/campus_information_system/view/administrative/e_clearance/index.tsx";
+
+import ViewCollegeOfBusinessAdministration from "@innovative_troublemaker/campus_information_system/view/academic/department/college_of_business_administration/index.tsx";
+import ViewQualityManagementOffice from "../../../view/administrative/quality_management_office";
+import ViewGuidanceOffice from "../../../view/administrative/guidance_office";
+import ViewCollegeOfPhysicalEducation from "../../../view/academic/department/college_of_physical_education/index";
+import ViewCollgeOfHospotalityAndTourismManagement from "../../../view/academic/department/collge_of_chtm";
+import ViewPropertyCustodian from "../../../view/administrative/property_custodian";
+import ViewAcademicVicePresidentOffice from "../../../view/administrative/academic_vice_president_office";
 
 export const ROUTES: { readonly [key: string]: $model.IRouteData } = Object.freeze({
     HOME: Object.freeze({
@@ -111,6 +124,16 @@ export const ROUTES: { readonly [key: string]: $model.IRouteData } = Object.free
             icon: <MUIIcon.SchoolSharp />
         }
     }),
+    COLLEGE_OF_EDUCATION: Object.freeze({
+        ID: "COLLEGE_OF_EDUCATION",
+        path: "/academic/department/college-of-education",
+        component: ViewCollegeOfEduction,
+        navigation: {
+            segment: "department/college-of-education",
+            title: "College of Eduction",
+            icon: <MUIIcon.SchoolSharp />
+        }
+    }),
     OSA: Object.freeze({
         ID: "OSA",
         path: "/administrative/office-of-student-affairs",
@@ -153,10 +176,10 @@ export const ROUTES: { readonly [key: string]: $model.IRouteData } = Object.free
     }),
     ADMISSION: Object.freeze({
         ID: "ADMISSION",
-        path: "/adminstrative/admission",
+        path: "/administrative/admission",
         component: ViewAdmission,
         navigation: {
-            segment: "adminstrative/admission",
+            segment: "administrative/admission",
             title: "Admission",
             icon: <MUIIcon.JoinFullSharp />
         }
@@ -190,18 +213,118 @@ export const ROUTES: { readonly [key: string]: $model.IRouteData } = Object.free
             title: "Registrar",
             icon: <MUIIcon.FolderSharedSharp />
         }
-    })
+    }),
+    OFFICE_OF_VICE_PRESIDENT: Object.freeze({
+        ID: "OFFICE_OF_VICE_PRESIDENT",
+        path: "/administrative/office-of-Vice-president",
+        component: ViewOfficeOfVicePresident,
+        navigation: {
+            segment: "administrative/office-of-Vice-president",
+            title: "Office of Vice President",
+            icon: <MUIIcon.BusinessCenterSharp />
+        }
+    }),
+    COMMUNITY_EXTENSION: Object.freeze({
+        ID: "COMMUNITY_EXTENSION",
+        path: "/administrative/community-extension",
+        component: ViewCommunityExtension,
+        navigation: {
+            segment: "administrative/community-extension",
+            title: "Communit Extension",
+            icon: <MUIIcon.BusinessCenterSharp />
+        }
+    }),
+    E_CLEARANCE: Object.freeze({
+        ID: "E_CLEARANCE",
+        path: "/administrative/e-clearance/ict",
+        component: ViewEClearance,
+        navigation: {
+            segment: "e-clearance/ict",
+            title: "ICT",
+            icon: <MUIIcon.SchoolRounded />
+        }
+    }),
+    COLLEGE_OF_BUSINESS_ADMINISTRATION: Object.freeze({
+        ID: "COLLEGE_OF_BUSINESS_ADMINISTRATION",
+        path: "/academic/department/college-of-business-administration",
+        component: ViewCollegeOfBusinessAdministration,
+        navigation: {
+            segment: "department/college-of-business-administration",
+            title: "College of BA",
+            icon: <MUIIcon.SchoolRounded />
+        }
+    }),
+    QUALITY_MANAGEMENT_OFFICE: Object.freeze({
+        ID: "QUALITY_MANAGEMENT_OFFICE",
+        path: "/administrative/quality-management-office",
+        component: ViewQualityManagementOffice,
+        navigation: {
+            segment: "administrative/quality-management-office",
+            title: "Quality Management Office",
+            icon: <MUIIcon.ManageAccountsRounded />
+        }
+    }),
+    GUIDANCE_OFFICE: Object.freeze({
+        ID: "GUIDANCE_OFFICE",
+        path: "/administrative/guidance-office",
+        component: ViewGuidanceOffice,
+        navigation: {
+            segment: "administrative/guidance-office",
+            title: "Guidance Office",
+            icon: <MUIIcon.ManageAccountsRounded />
+        }
+    }),
+    COLLEGE_OF_PHYSICAL_EDUCATION: Object.freeze({
+        ID: "COLLEGE_OF_PHYSICAL_EDUCATION",
+        path: "/academic/department/college-of-physical-education",
+        component: ViewCollegeOfPhysicalEducation,
+        navigation: {
+            segment: "department/college-of-physical-education",
+            title: "College of PE",
+            icon: <MUIIcon.SchoolRounded />
+        }
+    }),
+    COLLEGE_OF_HOSTPITALITY_AND_TOURISM_MANAGEMENT: Object.freeze({
+        ID: "COLLEGE_OF_HOSTPITALITY_AND_TOURISM_MANAGEMENT",
+        path: "/academic/department/college-of-hospitality-and-tourism-management",
+        component: ViewCollgeOfHospotalityAndTourismManagement,
+        navigation: {
+            segment: "department/college-of-hospitality-and-tourism-management",
+            title: "College of CHTM",
+            icon: <MUIIcon.SchoolRounded />
+        }
+    }),
+    PROPERTY_CUSTODIAN: Object.freeze({
+        ID: "PROPERTY_CUSTODIAN",
+        path: "/administrative/property-custodian",
+        component: ViewPropertyCustodian,
+        navigation: {
+            segment: "administrative/property-custodian",
+            title: "Property Custodian",
+            icon: <MUIIcon.ManageAccountsRounded />
+        }
+    }),
+    ACADEMIC_VICE_PRESIDENT_OFFICE: Object.freeze({
+        ID: "ACADEMIC_VICE_PRESIDENT_OFFICE",
+        path: "/administrative/academic-vice-president-office",
+        component: ViewAcademicVicePresidentOffice,
+        navigation: {
+            segment: "administrative/academic-vice-president-office",
+            title: "AVP Office",
+            icon: <MUIIcon.ManageAccountsRounded />
+        }
+    }),
 });
 
 
 export const ROUTES_GATE: Readonly<{ [key: string]: $model.IRouteData }> = (() => {
-    const gate: { [key: string]: $model.IRouteData } = {};
+    const GATES: { [key: string]: $model.IRouteData } = {};
 
     Object.values(ROUTES).forEach(route => {
-        gate[route.path] = Object.freeze( route );
+        GATES[route.path] = Object.freeze( route );
     });
 
-    return Object.freeze(gate);
+    return Object.freeze(GATES);
 })();
 
 

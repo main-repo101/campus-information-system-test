@@ -5,9 +5,17 @@ import * as MUI from "@mui/material";
 
 const ViewOSA: React.FC = () => {
     return(<>
-        <MUI.Typography variant={`h2`}>
-            Office of Student Affairs
-        </MUI.Typography>
+        <div style={{ width: '100%', height: '100vh' }}>
+            <iframe
+                src="/resources/administrative/office_of_student_affair/index.html"
+                style={{
+                    width: '100%',
+                    height: '100%',
+                    border: 'none',
+                }}
+                title="Embedded HTML"
+            ></iframe>
+        </div>
     </>);
 }
 

@@ -1,0 +1,18 @@
+{
+    "companyInfo": {
+        "name": "Office of the Registrar's",
+        "address": "Ecoland Drive, Matina, Davao City, 8000",
+        "phone": "(Registrar's Office): (082) 297-2033",
+        "email": "info@sjp2cd.edu.ph"
+    },
+    "socialLinks": [
+        { "platform": "Facebook", "url": "https://www.facebook.com/sjp2cdregistrarsoffice", "icon": "fb" },
+        { "platform": "Twitter", "url": "https://twitter.com", "icon": "twitter" },
+        { "platform": "LinkedIn", "url": "https://linkedin.com", "icon": "linkedin" }
+    ],
+    "footerLinks": [
+        { "label": "Privacy Policy", "url": "/privacy" },
+        { "label": "Terms of Service", "url": "/terms" },
+        { "label": "FAQ", "url": "/faq" }
+    ]
+}
