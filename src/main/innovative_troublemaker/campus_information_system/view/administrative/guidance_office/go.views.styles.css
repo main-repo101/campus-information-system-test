@@ -1,0 +1,449 @@
+#administrative-go {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eaf2f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#administrative-go header {
+    background-color: rgba(41, 128, 185, 0.9);
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+#administrative-go header:hover {
+    background-color: rgba(41, 128, 185, 1);
+}
+
+#administrative-go .logo {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#administrative-go .logo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#administrative-go .title {
+    text-align: left;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#administrative-go .title h1, .title h2 {
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#administrative-go .intro, .about-us {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+#administrative-go .intro h2, .about-us h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#administrative-go main {
+    padding: 20px;
+}
+
+#administrative-go .org-chart {
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+#administrative-go .org-chart ul {
+    padding-top: 20px;
+    position: relative;
+    transition: all 0.5s;
+    padding-left: 0;
+}
+
+#administrative-go .org-chart li {
+    float: left;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+    padding: 20px 5px 0 5px;
+    transition: all 0.5s;
+}
+
+#administrative-go .org-chart li::before, .org-chart li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 50%;
+    border-top: 2px solid #ccc;
+    width: 50%;
+    height: 20px;
+}
+
+#administrative-go .org-chart li::after {
+    right: auto;
+    left: 50%;
+    border-left: 2px solid #ccc;
+}
+
+#administrative-go .org-chart li:only-child::after, .org-chart li:only-child::before {
+    display: none;
+}
+
+#administrative-go .org-chart li:only-child {
+    padding-top: 0;
+}
+
+#administrative-go .org-chart li:first-child::before, .org-chart li:last-child::after {
+    border: 0 none;
+}
+
+#administrative-go .org-chart li:last-child::before {
+    border-right: 2px solid #ccc;
+    border-radius: 0 5px 0 0;
+}
+
+#administrative-go .org-chart li:first-child::after {
+    border-radius: 5px 0 0 0;
+}
+
+#administrative-go .org-chart ul ul::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-left: 2px solid #ccc;
+    width: 0;
+    height: 20px;
+}
+
+#administrative-go .card {
+    border: 2px solid rgba(41, 128, 185, 0.8);
+    padding: 15px;
+    display: inline-block;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#administrative-go .card:hover {
+    background-color: rgba(214, 234, 248, 0.9);
+    transform: translateY(-5px);
+}
+
+#administrative-go .card::after {
+    content: '';
+    display: block;
+    margin: 10px auto;
+    width: 40px;
+    height: 3px;
+    background-color: rgba(41, 128, 185, 0.8);
+}
+
+#administrative-go blockquote {
+    font-style: italic;
+    color: #555;
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 4px solid rgba(41, 128, 185, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#administrative-go footer {
+    background-color: rgba(41, 128, 185, 0.9);
+    color: white;
+    padding: 15px 0;
+    /* position: fixed; */
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+#administrative-go footer:hover {
+    background-color: rgba(41, 128, 185, 1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#administrative-go {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eaf2f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#administrative-go header {
+    background-color: rgba(41, 128, 185, 0.9);
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#administrative-go .logo {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#administrative-go .title {
+    text-align: left;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#administrative-go .title h1, .title h2, .about-us h2, .guidance-center h1 {
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#administrative-go .intro, .about-us, .guidance-center {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+#administrative-go .about-us ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#administrative-go .about-us li {
+    margin: 10px 0;
+}
+
+#administrative-go .about-us a {
+    text-decoration: none;
+    color: #2980b9;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#administrative-go .about-us a:hover {
+    color: #1a5276;
+}
+
+#administrative-go blockquote {
+    font-style: italic;
+    color: #555;
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 4px solid rgba(41, 128, 185, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#administrative-go footer {
+    background-color: rgba(41, 128, 185, 0.9);
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#administrative-go footer a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#administrative-go .facilitator-image {
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make the image circular */
+    display: block;
+    margin: 10px auto; /* Center the image and add some space */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+#administrative-go .facilitator-name{
+    text-align: center; /* Center the text */
+    font-weight: bold; /* Make the text bold */
+    margin-top: 5px; /* Add some space above the text */
+}
+
+
+
+
+
+/*=== about-us.css*/
+#administrative-go-about-us {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fa; /* Light background for readability */
+    color: #333; /* Dark text for contrast */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+#administrative-go-about-us header {
+    background-color: rgb(255, 255, 255); /* Standard blue color for header */
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+    animation: fadeIn 1s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#administrative-go-about-us header .sjp2cd {
+    max-width: 100x; /* Further reduced size for a smaller logo */
+    height: auto;
+    margin-bottom: 10px; /* Space between the logo and the title */
+    border-radius: 8px; /* Optional: Rounded corners for a softer look */
+    box-shadow: 0 0cap 0px rgba(0, 0, 0, 0.2); /* Optional: Subtle shadow for depth */
+}
+
+#administrative-go-about-us header h1 {
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Shadow for the header text */
+}
+
+#administrative-go-about-us header:hover {
+    background-color: #ffffff; /* Slightly lighter blue on hover */
+    transform: translateY(-5px);
+}
+
+#administrative-go-about-us .guidance-office {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white; /* White background for content */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+#administrative-go-about-us .quotes {
+    margin-top: 20px;
+}
+
+#administrative-go-about-us blockquote {
+    font-style: italic;
+    color: #555;
+    margin: 20px 0;
+    padding: 15px;
+    border-left: 4px solid #3498db; /* Accent color - bright blue */
+    background-color: #ade6ee; /* Light blue background for quotes */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#administrative-go-about-us footer:hover {
+    background-color: #000000; /* Black on hover */
+    transform: translateY(-5px);
+}
+
+#administrative-go-about-us footer a {
+    color: #3498db; /* Accent color - bright blue */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #3498db; /* Accent color */
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+#administrative-go-about-us footer a:hover {
+    background-color: #3498db; /* Accent color */
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Dark Mode Styles */
+#administrative-go-about-us.dark-mode {
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text for contrast */
+}
+
+#administrative-go-about-us header.dark-mode {
+    background-color: #1f1f1f; /* Darker header background */
+    color: #e0e0e0; /* Light text */
+}
+
+.guidance-office.dark-mode {
+    background-color: #1e1e1e; /* Dark background for content */
+}
+
+#administrative-go-about-us blockquote.dark-mode {
+    color: #bbb;
+    background-color: #2a2a2a; /* Dark background for quotes */
+    border-left-color: #bb86fc; /* Accent color - purple */
+}
+
+#administrative-go-about-us footer.dark-mode {
+    background-color: #1f1f1f; 
+}
+
+#administrative-go-about-us footer a.dark-mode {
+    color: #bb86fc;
+    border-color: #bb86fc;
+}
+
+#administrative-go-about-us footer a.dark-mode:hover {
+    background-color: #bb86fc; /* Accent color */
+    color: #121212;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+#administrative-go-about-us footer {
+    position: static;
+    margin:0;
+    margin-left: -5rem;
+    background-color: #333333; /* Gray color for footer */
+    color: white;
+    padding: 15px 0;
+    /* text-align: center; */
+    /* position: fixed; */
+    /* width: 100%; */
+    bottom: 2.5rem;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
