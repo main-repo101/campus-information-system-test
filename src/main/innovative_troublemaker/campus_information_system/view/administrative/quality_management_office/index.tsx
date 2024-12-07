@@ -28,7 +28,7 @@ const ViewQualityManagementOffice: React.FC = () => {
             <div className="flex-container">
                 <div className="left-container">
                     <div className="image-box">
-                        <img src="https://placehold.co/150/black/white/png" alt="Environmental Projects" />
+                        <img src="https://placehold.co/150x170/gray/white/png" alt="Environmental Projects" />
 
                     </div>
                     <h2 style={{ borderBottom: "none", marginBottom: 0, lineHeight: 1.2, textAlign: "center" }}>QUALITY MANAGEMENT OFFICE(QMO) OFFICERS</h2>
@@ -82,10 +82,10 @@ const ViewQualityManagementOffice: React.FC = () => {
 
                                 <div className="image-box-container">
                                     <div className="image-box">
-                                        <img src="https://placehold.co/150/black/white/png" alt="Community Service" />
+                                        <img src="https://placehold.co/150x170/gray/white/png" alt="Community Service" />
                                     </div>
                                     <div className="image-box">
-                                        <img src="https://placehold.co/150/black/white/png" alt="Health Services" />
+                                        <img src="https://placehold.co/150x170/gray/white/png" alt="Health Services" />
                                     </div>
                                 </div>
                                 <h2>Community Impact</h2>
