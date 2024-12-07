@@ -146,11 +146,11 @@ export const ROUTES: { readonly [key: string]: $model.IRouteData } = Object.free
     }),
     CHAPEL: Object.freeze({
         ID: "CHAPEL",
-        path: "/administrative/chapel",
+        path: "/administrative/campus-ministry",
         component: ViewChapel,
         navigation: {
-            segment: "administrative/chapel",
-            title: "Chapel",
+            segment: "administrative/campus-ministry",
+            title: "Campus Ministry",
             icon: <MUIIcon.ChurchSharp />
         }
     }),
@@ -294,13 +294,13 @@ export const ROUTES: { readonly [key: string]: $model.IRouteData } = Object.free
             icon: <MUIIcon.SchoolRounded />
         }
     }),
-    PROPERTY_CUSTODIAN: Object.freeze({
-        ID: "PROPERTY_CUSTODIAN",
-        path: "/administrative/property-custodian",
+    PROPERTY_CUSTODIAN_SERVICES: Object.freeze({
+        ID: "PROPERTY_CUSTODIAN_SERVICES",
+        path: "/administrative/property-custodian-services",
         component: ViewPropertyCustodian,
         navigation: {
-            segment: "administrative/property-custodian",
-            title: "Property Custodian",
+            segment: "administrative/property-custodian-services",
+            title: "Property Custodian Services",
             icon: <MUIIcon.ManageAccountsRounded />
         }
     }),
